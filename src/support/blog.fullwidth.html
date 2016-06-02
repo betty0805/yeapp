@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>YeApp - Flat web application template & UI KIT with Bootstrap 3 and AngularJS</title>
+        
+        <!-- start: CSS -->
+        <link href='fonts/opensans/font.css' rel='stylesheet' type='text/css'>
+        <link href='fonts/montserrat/font.css' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="css/result.css">
+        <link rel="stylesheet" type="text/css" href="css/animate.css">
+        <link rel="stylesheet" type="text/css" href="fonts/linea/_basic/_ICONFONT/styles.css">
+        <link rel="stylesheet" type="text/css" href="fonts/linea/_arrows/_ICONFONT/styles.css">
+        <link rel="stylesheet" type="text/css" href="fonts/linea/_software/_ICONFONT/styles.css">
+        <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="js/nprogress/nprogress.css">
+        <!-- end: CSS -->
+        
+        
+    </head>
+    <body class=" has-info-bar">
+        
+        
+
+    <!-- start: Info bar -->
+<div class="bg-black color-white info-bar">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 info-bar-left">
+                <ul class="clearfix">
+                    <li>
+                        <a><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a><i class="fa fa-behance"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-6 info-bar-right">
+                <ul class="clearfix">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle font-montserrat" data-toggle="dropdown">English <i class="fa fa-angle-down"></i></a>
+                        <div class="dropdown-menu animated fadeIn no-b-i" style="min-width:100%;">
+                            <div class="text-center">
+                                <div class="b-b-b-l p-b-5 m-b-5">
+                                    <a class="display-block">English</a>
+                                </div>
+                                <div class="b-b-b-l p-b-5 m-b-5">
+                                    <a class="display-block">German</a>
+                                </div>
+                                <div>
+                                    <a class="display-block">Spanish</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle font-montserrat" data-toggle="dropdown" role="button">Sign In <i class="fa fa-angle-down"></i></a>
+                        <div class="dropdown-menu drop-down-sign-in p-30 animated fadeIn no-b-i">
+                            <form>
+                                <div class="form-group form-group-alt no-m-b no-b-b">
+                                    <input type="text" class="form-control no-m-t" placeholder="Username" style="width:200px;">
+                                    <span></span>
+                                </div>
+                                <div class="form-group form-group-alt no-m-b">
+                                    <input type="password" class="form-control no-m-t" placeholder="Password" style="width:200px;">
+                                    <span></span>
+                                </div>
+                                <div class="m-t-20">
+                                    <button class="btn btn-primary btn-block btn-rounded btn-line">Sign In</button>
+                                </div>
+                            </form>
+                            <div class="m-t-20">
+                                <a>Not have an Account? <span class="font-bold">Sign Up</span></a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end: Info bar -->
+
+<!-- start: Navigation/Header -->
+<div id="header" class="navbar app-navbar app-navbar-v2 app-navbar-dropdown-hover navbar-fixed-top font-montserrat">
+    <div class="container xs-no-p">
+        <div class="row no-m">
+            <div class="col-md-12">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed no-p-i m-t-b-5 no-m-r" data-toggle="collapse" data-target="#landingPageNavbarCollapse">
+                        <i class="icon icon-arrows-hamburger-2 icon-font collapse-fix"></i>
+                    </button>
+                    <a href="index.html" class="navbar-brand mobile-m-l no-p"> 
+                        <img id="brand-logo" src="img/yeapp-logo-dk.png" alt="logo" style="height:30px;">
+                    </a>
+                </div>
+                <div id="landingPageNavbarCollapse" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                                Ticketing <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeIn">
+                                <li><a href="ticketing.list.html">Tickets list</a></li>
+                                <li><a href="ticketing.grid.html">Tickets grid</a></li>
+                                <li><a href="ticketing.detail.html">Ticket detail</a></li>
+                                <li><a href="ticketing.open.html">Open ticket</a></li>
+                                <li><a href="ticketing.open.fullwidth.html">Open ticket full</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                                Forum <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeIn">
+                                <li><a href="forum.table.html">Forum table</a></li>
+                                <li><a href="forum.grid.html">Forum grid</a></li>
+                                <li><a href="forum.table.fullwidth.html">Forum table full</a></li>
+                                <li><a href="forum.grid.fullwidth.html">Forum grid full</a></li>
+                                <li><a href="forum.detail.html">Forum detail</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                                Knowledge <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeIn">
+                                <li><a href="knowledge.3col.html">3 columns</a></li>
+                                <li><a href="knowledge.2col.html">2 columns</a></li>
+                                <li><a href="knowledge.1col.html">1 columns</a></li>
+                                <li><a href="knowledge.detail.html">Knowledge detail</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                                Blog <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeIn">
+                                <li><a href="blog.fullwidth.html">Full-width</a></li>
+                                <li><a href="blog.grid.html">Grid list</a></li>
+                                <li><a href="blog.standard.html">Standard</a></li>
+                                <li><a href="blog.smallthumb.html">Small thumbnails</a></li>
+                                <li><a href="blog.post.fullwidth.html">Post full</a></li>
+                                <li><a href="blog.post.html">Post</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="contact.html">
+                                Contact
+                            </a>
+                        </li>
+                        <li>
+                            <div class="m-t-14 m-l-10">
+                                <a href="livechat.html" class="btn btn-success btn-sm btn-rounded btn-line btn-b-2 font-bold">Live chat</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end: Navigation/Header -->
+
+
+        
+        
+    <div class="img-cover img-cover-dark m-t-60 text-white" style="background-image: url('img/bgimg/big/16.jpg')">
+        <div class="content-padding ">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 font-montserrat">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <span class="label label-info h3 no-m label-rounded label-md">JAVASCRIPT</span>
+                    </div>
+                    <div class="col-sm-6 text-right text-muted">
+                        10 mins read
+                    </div>
+                </div>
+                <div>
+                    <h1 class="no-m m-t-b-30"><a class="text-white">Angular 1 and Angular 2 integration: the path to seamless upgrade</a></h1>
+                </div>
+                <div>
+                    <p class="text-hd line-h-hd no-m">
+                  The team has announced that its next major version will be a complete re-write with no backwards compatibility. We can expect a release to happen at least a year from now, and it's said that support for 1.3 will continue for 18-24 months from that point.
+                    </p>
+                </div>
+                <div class="m-t-5 text-muted">
+                    <a class="inline-block m-r-3 text-muted">
+                        <i class="fa fa-comment-o "></i>  3 
+                    </a>
+                    <a class="inline-block text-muted">
+                        <i class="fa fa-heart-o "></i> 34
+                    </a>
+                </div>
+                <div class="m-t-30"> 
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="media font-montserrat">
+                                <div class="media-left"><img src="img/avatar7.jpg" class="thumb-sm img-circle inline-block m-r-3" alt="pic"></div>
+                                <div class="media-body text-muted">
+                                    <a class="text-lg block text-white">
+                                        Jon Done
+                                    </a>
+                                    <div>
+                                        <span class="">17th Jan 2015</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 text-right">
+                            <a class="btn btn-white btn-line btn-rounded btn-icon text-white">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a class="btn btn-white btn-line btn-rounded btn-icon text-white">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a class="btn btn-white btn-line btn-rounded btn-icon text-white">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+
+        
+        
+
+    
+
+        
+            
+        
+        
+        <div class="content-padding ">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 font-montserrat">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <span class="label label-info h3 no-m label-rounded label-md">Javascript</span>
+                    </div>
+                    <div class="col-sm-6 text-right text-muted">
+                        10 mins read
+                    </div>
+                </div>
+                <div>
+                    <h1 class="no-m m-t-b-30"><a>Get Global Variables with JavaScript</a></h1>
+                </div>
+                <div>
+                    <p class="text-hd line-h-hd no-m">
+                        JavaScript globals are considered bad.  And as a contributor to the MooTools project, Ive heard this on a daily basis for the better part of a decade.  MooTools got knocked for extending natives but also for placing objects in the global space, like Browser and $$.  I find the "global vars are terrible" philosophy a bit funny since even jQuery and JavaScript loaders use a global variable. [...]
+                    </p>
+                </div>
+                <div class="m-t-5 text-muted">
+                    <a class="inline-block m-r-3">
+                        <i class="fa fa-comment-o "></i>  4
+                    </a>
+                    <a class="inline-block">
+                        <i class="fa fa-heart-o "></i> 10
+                    </a>
+                </div>
+                <div class="m-t-30"> 
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="media font-montserrat">
+                                <div class="media-left"><img src="img/avatars/face1.jpg" class="thumb-sm img-circle inline-block m-r-3" alt="pic"></div>
+                                <div class="media-body">
+                                    <a class="text-lg block text-muted">
+                                        John Kun
+                                    </a>
+                                    <div>
+                                        <span class="text-muted">17th Jan 2015</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 text-right">
+                            <a class="btn btn-default btn-rounded btn-icon">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a class="btn btn-default btn-rounded btn-icon">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a class="btn btn-default btn-rounded btn-icon">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+
+        
+            
+        
+        
+        <div class="content-padding bg-lightgrey">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 font-montserrat">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <span class="label label-info h3 no-m label-rounded label-md">Programming</span>
+                    </div>
+                    <div class="col-sm-6 text-right text-muted">
+                        10 mins read
+                    </div>
+                </div>
+                <div>
+                    <h1 class="no-m m-t-b-30"><a>Creating an Isomorphic Blogging app Using React and Flux</a></h1>
+                </div>
+                <div>
+                    <p class="text-hd line-h-hd no-m">
+                        One of the many benefits of React is its ability to render the components on both client and server. This tutorial aims to teach you how to create isomorphic apps using React and Flux architecture. We will also create a simple blogging app to understand how exactly Flux and React fit together. [...]
+                    </p>
+                </div>
+                <div class="m-t-5 text-muted">
+                    <a class="inline-block m-r-3">
+                        <i class="fa fa-comment-o "></i>  10
+                    </a>
+                    <a class="inline-block">
+                        <i class="fa fa-heart-o "></i> 1
+                    </a>
+                </div>
+                <div class="m-t-30"> 
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="media font-montserrat">
+                                <div class="media-left"><img src="img/avatars/face2.jpg" class="thumb-sm img-circle inline-block m-r-3" alt="pic"></div>
+                                <div class="media-body">
+                                    <a class="text-lg block text-muted">
+                                        Buck Jon
+                                    </a>
+                                    <div>
+                                        <span class="text-muted">20th Jan 2015</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 text-right">
+                            <a class="btn btn-default btn-rounded btn-icon">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a class="btn btn-default btn-rounded btn-icon">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a class="btn btn-default btn-rounded btn-icon">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+
+        
+            
+        
+        
+        <div class="content-padding ">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 font-montserrat">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <span class="label label-info h3 no-m label-rounded label-md">News</span>
+                    </div>
+                    <div class="col-sm-6 text-right text-muted">
+                        10 mins read
+                    </div>
+                </div>
+                <div>
+                    <h1 class="no-m m-t-b-30"><a>Googles Angular 2 Survey Results</a></h1>
+                </div>
+                <div>
+                    <p class="text-hd line-h-hd no-m">
+                        JavaScript globals are considered bad.  And as a contributor to the MooTools project, Ive heard this on a daily basis for the better part of a decade.  MooTools got knocked for extending natives but also for placing objects in the global space, like Browser and $$.  I find the "global vars are terrible" philosophy a bit funny since even jQuery and JavaScript loaders use a global variable. [...]
+                    </p>
+                </div>
+                <div class="m-t-5 text-muted">
+                    <a class="inline-block m-r-3">
+                        <i class="fa fa-comment-o "></i>  4
+                    </a>
+                    <a class="inline-block">
+                        <i class="fa fa-heart-o "></i> 10
+                    </a>
+                </div>
+                <div class="m-t-30"> 
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="media font-montserrat">
+                                <div class="media-left"><img src="img/avatars/face3.jpg" class="thumb-sm img-circle inline-block m-r-3" alt="pic"></div>
+                                <div class="media-body">
+                                    <a class="text-lg block text-muted">
+                                        Dimitry Doe
+                                    </a>
+                                    <div>
+                                        <span class="text-muted">30th June 2015</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 text-right">
+                            <a class="btn btn-default btn-rounded btn-icon">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a class="btn btn-default btn-rounded btn-icon">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a class="btn btn-default btn-rounded btn-icon">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+
+        
+            
+        
+        
+        <div class="content-padding bg-lightgrey">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 font-montserrat">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <span class="label label-info h3 no-m label-rounded label-md">Javascript</span>
+                    </div>
+                    <div class="col-sm-6 text-right text-muted">
+                        10 mins read
+                    </div>
+                </div>
+                <div>
+                    <h1 class="no-m m-t-b-30"><a>Get Global Variables with JavaScript</a></h1>
+                </div>
+                <div>
+                    <p class="text-hd line-h-hd no-m">
+                        The AngularJS team presents the results of a survey carried out by Jeff Whelpley and Patrick Stapleton. This survey treats with how developers are going to use the upcoming AngularJS 2.x branch. [...]
+                    </p>
+                </div>
+                <div class="m-t-5 text-muted">
+                    <a class="inline-block m-r-3">
+                        <i class="fa fa-comment-o "></i>  1
+                    </a>
+                    <a class="inline-block">
+                        <i class="fa fa-heart-o "></i> 33
+                    </a>
+                </div>
+                <div class="m-t-30"> 
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="media font-montserrat">
+                                <div class="media-left"><img src="img/avatars/face5.jpg" class="thumb-sm img-circle inline-block m-r-3" alt="pic"></div>
+                                <div class="media-body">
+                                    <a class="text-lg block text-muted">
+                                        Micheal Corl
+                                    </a>
+                                    <div>
+                                        <span class="text-muted">17th Jan 2015</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 text-right">
+                            <a class="btn btn-default btn-rounded btn-icon">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a class="btn btn-default btn-rounded btn-icon">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a class="btn btn-default btn-rounded btn-icon">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+
+        
+            
+        
+        
+        <div class="content-padding ">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 font-montserrat">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <span class="label label-info h3 no-m label-rounded label-md">Angular2</span>
+                    </div>
+                    <div class="col-sm-6 text-right text-muted">
+                        10 mins read
+                    </div>
+                </div>
+                <div>
+                    <h1 class="no-m m-t-b-30"><a>Angular 2 Series - Part 1: Working with Pipes</a></h1>
+                </div>
+                <div>
+                    <p class="text-hd line-h-hd no-m">
+                        Learn how to implement pipes (formerly known as filters) in your Angular 2 apps in this tutorial from Auth0. [...]
+                    </p>
+                </div>
+                <div class="m-t-5 text-muted">
+                    <a class="inline-block m-r-3">
+                        <i class="fa fa-comment-o "></i>  4
+                    </a>
+                    <a class="inline-block">
+                        <i class="fa fa-heart-o "></i> 10
+                    </a>
+                </div>
+                <div class="m-t-30"> 
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="media font-montserrat">
+                                <div class="media-left"><img src="img/avatars/face6.jpg" class="thumb-sm img-circle inline-block m-r-3" alt="pic"></div>
+                                <div class="media-body">
+                                    <a class="text-lg block text-muted">
+                                        Steven Hobbson
+                                    </a>
+                                    <div>
+                                        <span class="text-muted">17th Dec 2015</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 text-right">
+                            <a class="btn btn-default btn-rounded btn-icon">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a class="btn btn-default btn-rounded btn-icon">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a class="btn btn-default btn-rounded btn-icon">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+
+        
+            
+        
+        
+        <div class="content-padding bg-lightgrey">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 font-montserrat">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <span class="label label-info h3 no-m label-rounded label-md">JQuery</span>
+                    </div>
+                    <div class="col-sm-6 text-right text-muted">
+                        10 mins read
+                    </div>
+                </div>
+                <div>
+                    <h1 class="no-m m-t-b-30"><a>jQuery Foundation and Dojo Foundation to Merget</a></h1>
+                </div>
+                <div>
+                    <p class="text-hd line-h-hd no-m">
+                        The jQuery Foundation and Dojo Foundation today announce plans to combine forces to form the largest, most diverse and most comprehensive Foundation committed to building the Open Web by serving developers, their projects and their communities. [...]
+                    </p>
+                </div>
+                <div class="m-t-5 text-muted">
+                    <a class="inline-block m-r-3">
+                        <i class="fa fa-comment-o "></i>  4
+                    </a>
+                    <a class="inline-block">
+                        <i class="fa fa-heart-o "></i> 10
+                    </a>
+                </div>
+                <div class="m-t-30"> 
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="media font-montserrat">
+                                <div class="media-left"><img src="img/avatars/face4.jpg" class="thumb-sm img-circle inline-block m-r-3" alt="pic"></div>
+                                <div class="media-body">
+                                    <a class="text-lg block text-muted">
+                                        Lisa Dohhh
+                                    </a>
+                                    <div>
+                                        <span class="text-muted">17th Jan 2015</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 text-right">
+                            <a class="btn btn-default btn-rounded btn-icon">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a class="btn btn-default btn-rounded btn-icon">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a class="btn btn-default btn-rounded btn-icon">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+
+        
+            
+        
+        
+        <div class="content-padding ">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 font-montserrat">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <span class="label label-info h3 no-m label-rounded label-md">Javascript</span>
+                    </div>
+                    <div class="col-sm-6 text-right text-muted">
+                        10 mins read
+                    </div>
+                </div>
+                <div>
+                    <h1 class="no-m m-t-b-30"><a>JavaScript WebM encode</a></h1>
+                </div>
+                <div>
+                    <p class="text-hd line-h-hd no-m">
+                        webm.js is a simple one-page application that allows you to convert videos to WebM format, without any plugins or server-side involved. It is built upon FFmpeg which was ported to JavaScript using Emscripten. Since WebM is part of HTML5 stack, why cant we create one without leaving the browser? [...]
+                    </p>
+                </div>
+                <div class="m-t-5 text-muted">
+                    <a class="inline-block m-r-3">
+                        <i class="fa fa-comment-o "></i>  43
+                    </a>
+                    <a class="inline-block">
+                        <i class="fa fa-heart-o "></i> 233
+                    </a>
+                </div>
+                <div class="m-t-30"> 
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="media font-montserrat">
+                                <div class="media-left"><img src="img/avatars/face1.jpg" class="thumb-sm img-circle inline-block m-r-3" alt="pic"></div>
+                                <div class="media-body">
+                                    <a class="text-lg block text-muted">
+                                        Vegas Indie
+                                    </a>
+                                    <div>
+                                        <span class="text-muted">17th Jan 2015</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 text-right">
+                            <a class="btn btn-default btn-rounded btn-icon">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a class="btn btn-default btn-rounded btn-icon">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a class="btn btn-default btn-rounded btn-icon">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+
+        
+            
+        
+        
+        <div class="content-padding bg-lightgrey">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 font-montserrat">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <span class="label label-info h3 no-m label-rounded label-md">Tipps</span>
+                    </div>
+                    <div class="col-sm-6 text-right text-muted">
+                        10 mins read
+                    </div>
+                </div>
+                <div>
+                    <h1 class="no-m m-t-b-30"><a>Is Isomorphic JavaScript a good term?</a></h1>
+                </div>
+                <div>
+                    <p class="text-hd line-h-hd no-m">
+                        A recent trend in the web development world is to use JavaScript on the server to assemble pages there, with the same code that is used to manage them in the client. Michael Jackson proposes the term “Universal JavaScript” instead of "Isomorphic JavaScript.” [...]
+                    </p>
+                </div>
+                <div class="m-t-5 text-muted">
+                    <a class="inline-block m-r-3">
+                        <i class="fa fa-comment-o "></i>  12
+                    </a>
+                    <a class="inline-block">
+                        <i class="fa fa-heart-o "></i> 22
+                    </a>
+                </div>
+                <div class="m-t-30"> 
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="media font-montserrat">
+                                <div class="media-left"><img src="img/avatars/face1.jpg" class="thumb-sm img-circle inline-block m-r-3" alt="pic"></div>
+                                <div class="media-body">
+                                    <a class="text-lg block text-muted">
+                                        John Kun
+                                    </a>
+                                    <div>
+                                        <span class="text-muted">17th Jan 2015</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 text-right">
+                            <a class="btn btn-default btn-rounded btn-icon">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a class="btn btn-default btn-rounded btn-icon">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a class="btn btn-default btn-rounded btn-icon">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+    
+
+
+        
+        
+
+    <!-- start: Footer/Contact -->
+<div id="contact" class="content-padding font-thin bg-grey2 text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3 col-xs-12 m-b-20 xs-text-center">
+                <div class="h4 no-m m-b-10 subheading subheading-lg">OUR SERVICES</div>
+                <ul class="list-unstyled hint-text">
+                    <li class="m-b-10"><i class="fa fa-angle-right"></i> AngularJS development</li>
+                    <li class="m-b-10"><i class="fa fa-angle-right"></i> BigData analyse</li>
+                    <li class="m-b-10"><i class="fa fa-angle-right"></i> NodeJS development</li>
+                    <li class="m-b-10"><i class="fa fa-angle-right"></i> Fancy apps</li>
+                    <li><i class="fa fa-angle-right"></i> Cisco networks</li>
+                </ul>
+            </div>
+
+            <div class="col-sm-3 m-b-20 xs-text-center">
+                <div class="h4 no-m m-b-10 subheading subheading-lg">FIND US</div>
+                <ul class="list-unstyled hint-text">
+                    <li class="m-b-10"><i class="fa fa-angle-right"></i> Nice webApp & BigData Center </li>
+                    <li class="m-b-10"><i class="fa fa-angle-right"></i> 1600 West Antelope Drive </li>
+                    <li class="m-b-10"><i class="fa fa-angle-right"></i> Layton, UT 84041</li>
+                    <li class="m-b-10"><i class="fa fa-angle-right"></i> (801) 807-1000</li>
+                    <li><i class="fa fa-angle-right"></i> info@johndoe.com</li>
+                </ul>
+            </div>
+            <div class="col-sm-3 m-b-20 xs-text-center">
+                <div class="h4 no-m m-b-10 subheading subheading-lg">FOLLOW US</div>
+                <div class="m-t-30">
+                    <a class="btn bg-facebook color-white btn-rounded btn-icon">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a class="btn bg-twitter color-white btn-rounded btn-icon">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a class="btn bg-googleplus color-white btn-rounded btn-icon">
+                        <i class="fa fa-google-plus"></i>
+                    </a>
+                    <a class="btn bg-dribbble color-white btn-rounded btn-icon">
+                        <i class="fa fa-dribbble"></i>
+                    </a>
+                    <a class="btn bg-linkedin color-white btn-rounded btn-icon">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-3 m-b-20 xs-text-center">
+                <div class="h4 no-m m-b-10 subheading subheading-lg">ABOUT US</div>
+                <p class="hint-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p> 
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bg-grey2 dk p-t-b-10">
+    <div class="container">
+        <div class="row p-t-10 text-xs">
+            <div class="col-sm-12 col-xs-12 clearfix">
+                <ul class="list-inline inline-block hint-text">
+                    <li><a href="#products" class="text-white">Products</a></li>
+                    <li><a href="#clients" class="text-white">Clients</a></li>
+                    <li><a href="#pricing" class="text-white">Pricing</a></li>
+                </ul>
+                <span class="pull-right">YeApp © 2015</span>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end: Footer/Contact -->
+
+
+
+        <!-- start: JS scripts -->
+        <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/smoothscroll.js"></script>
+        <script type="text/javascript" src="js/wow.min.js"></script>
+        <script type="text/javascript" src="js/jquery.appear.js"></script>
+        <script type="text/javascript" src="js/jquery.smoothwheel.js"></script>
+        <script type="text/javascript" src="js/nprogress/nprogress.js"></script>
+        
+        
+        
+        <script type="text/javascript" src="js/main.js"></script>
+        <!-- end: JS scripts -->
+        
+    </body>
+</html>

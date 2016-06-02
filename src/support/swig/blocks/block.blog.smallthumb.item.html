@@ -1,0 +1,49 @@
+<div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="m-b-10 font-montserrat">
+                <span class="label label-info  h3 no-m label-rounded label-md">{{tag}}</span> 
+                <span class="inline-block m-r-l-10"> by <a>{{user.name}}</a></span> 
+                <span class="text-muted">{{time}}</span>
+            </div>
+            <div>
+                <h3 class="no-m m-b-20 font-bold">{{title}}</h3>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <img src="{{img}}" class="img-responsive" alt="pic">
+        </div>
+        <div class="col-md-6"> 
+            <p class="no-m text-lg m-b-20">
+            {{content}} [...]
+            </p>
+            <div class="row">
+                <div class="col-xs-6">
+                    <a class="btn btn-default btn-rounded btn-icon">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a class="btn btn-default btn-rounded btn-icon">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a class="btn btn-default btn-rounded btn-icon">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                </div>
+                <div class="col-xs-6 text-right">
+                    <div class="m-t-5">
+                        <a class="inline-block m-r-3">
+                            <i class="fa fa-comment-o"></i> {{comments}} 
+                        </a>
+                        <a class="inline-block">
+                            <i class="fa fa-heart-o"></i> {{likes}}
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>

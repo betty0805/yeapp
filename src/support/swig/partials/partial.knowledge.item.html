@@ -1,0 +1,16 @@
+<div class="panel panel-default text-center">
+    <div class="panel-heading p-t-30 p-b-20 no-b-i">
+        <div class="{{item_icon}} icon-font"></div>
+        <h5 class="no-m no-text-transform font-bold">{{item_name}}</h5>
+    </div>
+    <div class="panel-body p-r-l-30 no-p-t">
+        <ul class="list-unstyled text-lg list-separeted">
+            {% for initems in item_items %}
+                <li><a>{{initems}}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="panel-footer bg-light lt">
+        <a class="font-bold">Read more</a>
+    </div>
+</div>

@@ -1,0 +1,103 @@
+.angular-ripple-holder{
+    position: relative;
+    overflow: hidden;
+}
+
+.angular-ripple {
+    display: block;
+    position: absolute;
+    background-color: rgba(0,0,0,0.1);
+    .border-radius(50%,50%,50%,50%);
+    .scale(0);
+}
+
+.animated-left{
+    .transition(left 0.5s ease-in-out);
+}
+
+.animated-right{
+    .transition(right 0.5s ease-in-out);
+}
+
+.angular-ripple.animate {
+    .animation(ripple 0.35s linear);
+}
+
+@-moz-keyframes ripple {
+    100% {
+        opacity: 0;
+        display:none;
+        .scale(2.5);
+        overflow: auto;
+    }
+}
+@-webkit-keyframes ripple {  
+    100% {
+        opacity: 0;
+        display:none;
+        .scale(2.5);
+        overflow: auto;
+    }
+}
+@keyframes ripple {
+    100% {
+        opacity: 0;
+        display:none;
+        .scale(2.5);
+        overflow: auto;
+    }
+}
+
+@-moz-keyframes asideFadeIn {
+    0% {
+        opacity: 0;
+        transform: translate(-40px, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0px, 0);
+    }
+}
+
+@-webkit-keyframes asideFadeIn {
+    0% {
+        opacity: 0;
+        transform: translate(-20px, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0px, 0);
+    }
+}
+
+@keyframes asideFadeIn {
+    0% {
+        opacity: 0;
+        transform: translate(-20px, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0px, 0);
+    }
+}
+
+[ui-view],[data-ui-view],animated-ui-view{
+    height:100%;
+    &.ng-enter{
+         opacity: 0;
+         .transition(all .5s ease-in-out);
+         transform: translate(0, 20px);
+         
+    }
+    &.ng-leave,&.ng-leave-active{
+        opacity: 0;
+    }
+    &.ng-enter{}
+    &.ng-enter-active{
+        opacity: 1;
+        transform: translate(0, 0px);
+    }
+    &.ng-leave{}
+    &.ng-leave-active{}
+}
+

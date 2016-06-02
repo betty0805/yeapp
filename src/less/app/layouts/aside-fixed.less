@@ -1,0 +1,92 @@
+/* fixed sidebar */
+body.app-aside-fixed{
+    .app-aside{
+        position: fixed;
+        top: 41px;
+        bottom: 0;
+        width: @asideWidth;
+        overflow-y:auto;
+        z-index: 1010;
+    }
+    /* navbar brand fixed */
+    .app-header{
+        .navbar-header{
+            width:@asideWidth;
+            height:40px;
+            .navbar-brand{
+                position:fixed;
+                top:0px;
+                width:@asideWidth;
+                left:0px;
+            }
+        }
+    }
+    .app-wrapper{
+        /* box layout case - left:auto */
+        &.container {
+            .navbar-header{
+                .navbar-brand{
+                    left:auto;
+                }
+            }
+        }
+        &.app-content-boxed {
+            &>.app-content{
+                &>div{
+                    max-width: 1100px;
+                    margin: auto;
+                }
+            }
+        }
+    }
+    /* fixed sidebar & fixed header - dont neeed fixed position */
+    &.app-header-fixed{
+        .navbar-header{
+            .navbar-brand{
+                position:relative;
+                top:auto;
+                left:auto;
+            }
+        }
+    }
+    /* fixed sidebar + closed or folded sidebar */
+    &.app-aside-folded{
+        .app-header{
+            .navbar-header{
+                width:51px;
+                height:40px;
+            }
+        }
+        .app-aside{
+            overflow-y:visible;
+            overflow-x: visible;
+            float:none;
+            .nav-children{
+                &>li{
+                    &>a{
+                        &>i{
+                            display:none;
+                        }
+                    }
+                }
+            }
+            .aside-wrapper{
+                position: fixed;
+                top: 41px;
+                bottom: 0;
+                left:auto;
+                z-index: 1000;
+                width: 199px;
+                overflow: hidden;
+            }
+            .nav-wrapper  {
+                height: 100%;
+                overflow-x: hidden;
+                overflow-y: scroll;
+                width:71px;
+            }
+        }
+    }
+    &.app-aside-folded.app-header-fixed{}
+}
+

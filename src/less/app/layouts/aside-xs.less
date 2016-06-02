@@ -1,0 +1,32 @@
+/* xs screen - override styles */
+body.screen-xs{
+    /* swiperight styles */
+    &.app-aside-show{
+        .app-aside{
+            position: absolute;
+            top: 41px;
+            bottom: 0;
+            width: @asideWidth;
+            display: block !important;
+            visibility: visible;
+            overflow-x: hidden;
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
+            z-index: 1010;
+        }   
+        /* translate3d effect to swipe right */
+        .app-content{
+            .translate3d(@asideWidth,0px,0px);
+            overflow: hidden;
+            position: absolute;
+            width: 100%;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 1015;
+            padding-top: 41px;
+            backface-visibility: hidden;
+        }
+    }
+}

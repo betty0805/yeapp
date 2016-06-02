@@ -1,0 +1,21 @@
+.accordion-alt{
+    &>.panel-group{
+        &>.panel{
+            border-color: @separatorColorLt;
+            margin:0px;
+            .border-radius(0px,0px,0px,0px);
+            .box-shadow(none);
+            border-bottom:none;
+            &:last-child{
+                border-bottom:1px solid @separatorColorLt;
+            }
+        }
+    }
+}
+
+.accordion-bordered{
+    border:1px solid @separatorColorLt;
+    border-width:0px 1px 0px 1px;
+}
+
+

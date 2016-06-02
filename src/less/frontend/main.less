@@ -1,0 +1,54 @@
+html{
+    height:100%;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+body,html{
+    overflow-x: hidden;
+    position: relative;
+}
+
+body{
+    font-family: 'Open Sans','Arial',sans-serif;
+    color: #58666e;
+    position: relative;
+    display:none;
+    overflow-y:hidden;
+    &.site-loaded{
+        display: block;
+        overflow-y:auto;
+    }
+    &.has-info-bar{
+        .app-navbar{
+            top:40px;
+            @media(max-width:767px){
+                top:80px;
+            }
+        }
+    }
+}
+
+a{
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+@-webkit-keyframes scrolls {
+    0% {
+        top: 10px;
+        opacity: 1;
+        height: 4px;
+    }
+    95% {
+        top: 18px;
+        opacity: 0;
+        height: 10px;
+    }
+    100% {
+        top: 8px;
+        opacity: 1;
+        height: 4px;
+    }
+}

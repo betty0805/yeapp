@@ -1,0 +1,200 @@
+<div class="text-lg">
+    <h4 class="no-m">
+        In software development, AngularJS (commonly referred to as "Angular") is an open-source web application framework maintained by Google and by a community of individual developers and corporations to address many of the challenges encountered in developing single-page applications.
+    </h4>
+    <h4 class="font-bold m-t-b-20">Why AngularJS?</h4>
+    <p class="no-m m-b-20">
+        HTML is great for declaring static documents, but it falters when we try to use it for declaring dynamic views in web-applications. AngularJS lets you extend HTML vocabulary for your application. The resulting environment is extraordinarily expressive, readable, and quick to develop.
+        Other frameworks deal with HTML’s shortcomings by either abstracting away HTML, CSS, and/or JavaScript or by providing an imperative way for manipulating the DOM. Neither of these address the root problem that HTML was not designed for dynamic views.
+    </p>
+    <div class="subheading m-b-20">Extensibility</div>
+    <p class="no-m m-b-20">
+        AngularJS is built around the belief that declarative programming should be used for building user interfaces and connecting software components, while imperative programming is better suited to defining an application's business logic.[2] The framework adapts and extends traditional HTML to present dynamic content through two-way data-binding that allows for the automatic synchronization of models and views. As a result, AngularJS de-emphasizes explicit DOM manipulation with the goal of improving testability and performance.
+    </p>
+    <p class="no-m text-muted">
+        AngularJS is a toolset for building the framework most suited to your application development. It is fully extensible and works well with other libraries. Every feature can be modified or replaced to suit your unique development workflow and feature needs. Read on to find out how.
+    </p>
+</div>
+<div class="content-padding img-cover m-t-b-30" style="background-image:url(img/bgimg/big/7.jpg);min-height: 600px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <div class="panel panel-default">
+                    <div class="panel-body p-30">
+                        <p class="text-italic no-m m-b-20">
+                            Oluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                        </p>
+                        <div class="text-xs text-muted">
+                            magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="text-lg">
+    <h4 class="no-m m-b-20">AngularJS is built around the belief that declarative programming should be used for building user interfaces and connecting software components, while imperative programming is better suited to defining an application's business logic.[2] The framework adapts and extends traditional HTML to present dynamic content through two-way data-binding that allows for the automatic synchronization of models and views. As a result, AngularJS de-emphasizes explicit DOM manipulation with the goal of improving testability and performance.</h4>
+    <h4 class="font-bold no-m m-b-20">Two-way data binding</h4>
+    <p class="no-m m-b-20">
+        AngularJS' two-way data binding is its most notable feature, and it reduces the complexity of code; with relief to the server backend of templating responsibilities. Instead, templates are rendered in plain HTML according to data contained in a scope defined in the model. The $scope service in Angular detects changes to the model section and modifies HTML expressions in the view via a controller. Likewise, any alterations to the view are reflected in the model. This circumvents the need to actively manipulate the DOM and encourages bootstrapping and rapid prototyping of web applications.[8] AngularJS detects changes in models by comparing the current values with values stored earlier in a process of dirty-checking, unlike Ember.js and Backbone.js that trigger listeners when the model values are changed
+    </p>
+    <div class="subheading m-b-20">AngularJS's design goals include:</div>
+    <ul class="p-l-20">
+        <li>
+            <p>
+                to decouple DOM manipulation from application logic. The difficulty of this is dramatically affected by the way the code is structured.
+            </p>
+        </li>
+        <li>
+            <p>
+                to decouple the client side of an application from the server side. This allows development work to progress in parallel, and allows for reuse of both sides.
+            </p>
+        </li>
+        <li>
+            <p>
+                to provide structure for the journey of building an application: from designing the UI, through writing the business logic, to testing.
+            </p>
+        </li>
+    </ul>
+</div>
+<div class="content-padding bg-yellow m-t-b-30">
+    <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+            <h4 class="no-m">
+                <span class="font-normal">AngularJS</span> was originally developed in 2009 by Adam Abrons[10] at Brat Tech LLC[11] as the software behind an online JSON storage service, that would have been priced by the megabyte, for easy-to-make applications for the enterprise. This venture was located at the web domain "GetAngular.com",[11] and had a few subscribers, before the two decided to abandon the business idea and release Angular as an open-source library.
+            </h4>
+        </div>
+    </div>
+</div>
+<div class="text-lg">
+    <h4 class="no-m m-b-20 font-bold">Example</h4>
+    <p class="no-m m-b-20">
+        In this example, we will code an order form with a total price updated in real time, using another one of Angular’s useful features – filters. Filters let you modify models and can be chained together using the pipe character |. In the example below, I am using the currency filter, to turn a number into a properly formatted price, complete with a dollar sign and cents. You can easily make your own filters, as you will see in example #4.
+    </p>
+    <pre class="no-b-i m-b-10"><code data-language="javascript">function Avengers(dataservice, logger) {
+    var vm = this;
+    vm.avengers = [];
+    vm.getAvengers = getAvengers;
+    vm.title = 'Avengers';
+
+    activate();
+
+    function activate() {
+        return getAvengers().then(function() {
+            logger.info('Activated Avengers View');
+        });
+    }
+
+    function getAvengers() {
+        return dataservice.getAvengers().then(function(data) {
+            vm.avengers = data;
+            return vm.avengers;
+        });
+    }
+}</code></pre>
+</div>
+
+<div class="row b-b-r-l b-b-l-l m-t-b-50 no-m b-b-t-l text-center font-montserrat">
+    <div class="col-sm-3 no-p b-b-b-l b-b-r-l">
+        <a class="p-t-b-10 block">
+            <i class="fa fa-angle-left"></i> Old posts
+        </a>
+    </div>
+    <div class="col-sm-6 no-p text-center b-b-b-l b-b-r-l">
+        <a class="p-t-b-10 block">
+            Back to main
+        </a>
+    </div>
+    <div class="col-sm-3 no-p text-center b-b-b-l">
+        <a class="p-t-b-10 block">
+            New posts <i class="fa fa-angle-right"></i> 
+        </a>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-xs-12">
+        <h2 class="no-m m-b-30">Comments</h2>
+        <div>
+            <div class="media">
+                <div class="media-left">
+                    <a href="#">
+                        <img class="media-object thumb-md img-circle" src="img/avatar4.jpg" alt="pic">
+                    </a>
+                </div>
+                <div class="media-body">
+                    <h5 class="media-heading no-m font-normal">Jonh ode</h5>
+                    <div class="text-muted">2 mins ago</div>
+                    <p class="no-m">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="media">
+                <div class="media-left">
+                    <a href="#">
+                        <img class="media-object thumb-md img-circle" src="img/avatar5.jpg" alt="pic">
+                    </a>
+                </div>
+                <div class="media-body">
+                    <h5 class="media-heading no-m font-normal">Joseph Zack</h5>
+                    <div class="text-muted">2 mins ago</div>
+                    <p class="no-m">
+                        liquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="media">
+                <div class="media-left">
+                    <a href="#">
+                        <img class="media-object thumb-md img-circle" src="img/avatar3.jpg" alt="pic">
+                    </a>
+                </div>
+                <div class="media-body">
+                    <h5 class="media-heading no-m font-normal">Ziber Don</h5>
+                    <div class="text-muted">2 mins ago</div>
+                    <p class="no-m">
+                        Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row m-t-50">
+    <div class="col-xs-12">
+        <h2 class="no-m m-b-30">Leave a comment</h2>
+    </div>
+</div>
+<div class="row row-gap-10">
+    <div class="col-sm-4">
+        <div class="form-group form-group-alt m-b-20">
+            <label>Name</label>
+            <input type="text" class="form-control" placeholder="John Doe">
+            <span></span>
+        </div>
+        <div class="form-group form-group-alt m-b-20">
+            <label>Email</label>
+            <input type="text" class="form-control" placeholder="example@jonh.com">
+            <span></span>
+        </div>
+        <div class="form-group form-group-alt m-b-20">
+            <label>Website</label>
+            <input type="text" class="form-control" placeholder="www.johndoe.com">
+            <span></span>
+        </div>
+    </div>
+    <div class="col-sm-8">
+        <div class="form-group m-b-20">
+            <textarea id="msgTextarea" class="form-control" ></textarea>
+        </div>
+        <div class="clearfix">
+            <button type="button" class="btn btn-primary btn-line btn-rounded pull-right">Submit</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,32 @@
+body.app-footer-fixed{
+    /* padding-bottom solution for fixed position */
+    .app-wrapper{
+        padding-bottom: 41px;
+        &.container{
+            .app-footer{
+                margin-left:0px;
+            }
+            .app-aside{
+                margin-bottom: 41px;
+            }
+        }
+    }
+    
+    /* reset margin-bottom */
+    &.app-aside-docked{
+        .app-aside{
+            margin-bottom: 0px !important;
+        }
+    }
+    
+    /* fixed pos */
+    .app-footer{
+        border-top: 1px solid #c5c5c5;
+        position: fixed;
+        bottom: 0;
+        right:0px;
+        left:0px;
+        z-index:1020;
+        background-color: #fbfbfb;
+    }
+}

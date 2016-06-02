@@ -1,0 +1,24 @@
+<div class="panel panel-default app-grid-panel-main">
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-10">
+                <div class="m-b-20"><span class="label label-{{tagcolor}} h3 no-m label-rounded font-montserrat text-uppercase">{{tag}}</span></div>
+                <h3 class="no-m m-b-20">
+                    <a>{{title}}</a>
+                </h3>
+                <p class="no-m m-b-10 text-lg">
+                    {{content}}
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <div class="panel-footer item">
+        <a>
+            <img src="img/avatars/{{user.avatar}}" class="thumb-xxs img-circle inline-block m-r-3" alt="pic"> <span class="text-muted">{{user.name}}</span>
+        </a>
+        <div class="text-muted item-wrapper top right">
+            <div class="m-r-30 m-t-15">{{time}}</div>
+        </div>
+    </div>
+</div>

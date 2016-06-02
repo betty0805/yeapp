@@ -1,0 +1,48 @@
+<div>
+    <div>
+        <span style="    display: block;
+              margin: 0;
+              max-height: 400px;
+              overflow: hidden;">
+            <a href="#">
+                <img src="{{img}}" class="img-responsive" alt="pic">
+            </a>
+        </span>
+    </div>
+    <div class="row m-t-20">
+        <div class="col-sm-12 text-muted font-montserrat">
+            <span class="label label-info  h3 no-m label-rounded label-md text-uppercase">{{tag}}</span> 
+            <span class="inline-block m-r-l-10"> by <a>{{user.name}}</a></span> 
+            <span class="text-muted">{{time}}</span>
+        </div>
+    </div>
+    <div>
+        <h2 class="no-m m-t-b-20 font-bold"><a href="#">{{title}}</a></h2>
+    </div>
+    <p class="no-m text-lg m-b-20">
+        {{content}} [...]
+    </p>
+    <div class="row font-montserrat">
+        <div class="col-xs-6">
+            <a class="btn btn-default btn-rounded btn-icon">
+                <i class="fa fa-facebook"></i>
+            </a>
+            <a class="btn btn-default btn-rounded btn-icon">
+                <i class="fa fa-twitter"></i>
+            </a>
+            <a class="btn btn-default btn-rounded btn-icon">
+                <i class="fa fa-linkedin"></i>
+            </a>
+        </div>
+        <div class="col-xs-6 text-right">
+            <div class="m-t-5">
+                <a class="inline-block m-r-3">
+                    <i class="fa fa-comment-o"></i>  {{likes}} 
+                </a>
+                <a class="inline-block">
+                    <i class="fa fa-heart-o"></i> {{comments}}
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

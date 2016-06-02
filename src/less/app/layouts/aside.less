@@ -1,0 +1,230 @@
+/* main sidebar styles */
+.nav.main-nav{
+    a{
+        .transition(background-color @defTransitionTime ease-in-out 0s);
+        &:hover{
+            text-decoration:none;
+            &>div,&>i{
+                .transition(all @defTransitionTime ease-in-out @defTransitionTime);
+            }
+        }
+        border-width:1px 0px;
+        border-style:solid;
+        border-color:transparent;
+    }
+    i{
+        .transition(background-color @defTransitionTime ease-in-out 0s);
+    }
+    &.nav-children{
+        display:none;
+        li{
+            
+            &>a{
+                font-size:13px;
+                div{
+                    margin-left:55px;
+                    padding:8px 10px 8px 0px;
+                    &>.nav-arrow{
+                        top:9px;
+                    }
+                }
+                &>i{
+                    .no-border-i;
+                    top: 4px !important;
+                    left:15px;
+                    background-color:transparent !important;
+                }
+            }
+            &.active{
+                &>a{
+                    &>i{
+                        top:2px; 
+                    }
+                }
+
+            }
+            &.fold-header{
+                display:none;
+            }
+        }
+    }
+    li
+    {
+        &.opened{
+            &>.nav-children{
+                display:block;
+            }
+            &>a{
+                &>div{
+                    &>i{
+                        .rotate(90deg);
+                        .transition(transform 0.20s);
+                    }
+                }
+            }
+        }
+        &.divider{
+            margin:4px 0px;
+            padding:4px 0px;
+            border-bottom:1px solid transparent;
+        }
+        &.text-wrapper{
+            margin:0px 16px;
+            padding:6px 0px 4px 0px;
+            text-transform: uppercase;
+            font-size: 12px;
+            &.sm{
+                margin-left:0px;
+            }
+        }
+        &>a{
+            padding:0px;
+            font-size:14px;
+            position: relative;
+            &:hover{
+                cursor:pointer;
+            }
+            &:focus{
+                background-color: transparent;
+            }
+            &>i{
+                .app-icon;
+                line-height: inherit;
+            }
+            &>.badge{
+                top: 2px;
+                left: 35px;
+                .badge-style;
+                z-index:2;
+            }
+            div{
+                margin-left:55px;
+                padding:11px 15px 10px 0px;
+                position:relative;
+                &>.nav-arrow{
+                    position:absolute;
+                    top:11px;
+                    right:15px;
+                    line-height: inherit;
+                }
+                &:before {
+                    .getBefore;
+                }
+                &:after{
+                    .getAfter;
+                } 
+            }   
+
+        }
+
+        &.active{
+            &>a{
+                cursor:default;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: -1px;
+                    height: 1px;
+                    left: 0px;
+                    right: 0px;
+                }
+                &:after{
+                    content: '';
+                    position: absolute;
+                    height: 1px;
+                    left: 0px;
+                    right: 0px;
+                    bottom: 0px;
+                    z-index: 1;
+                }
+                div{
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        top: -1px;
+                        height: 1px;
+                        left: 0px;
+                        right: 0px;
+                    }
+                }
+            }
+        }
+        .nav-tools{
+            position:relative;
+            &>div{
+                margin:0px 50px 0px 50px;
+                padding:5px 0px;
+                font-size:14px;
+            }
+            .nav-search{
+                padding:0px;
+                margin:0px;
+            }
+            .btn-left,.btn-right {
+                width:30px;
+                display: block;
+                height:100%;
+                position:absolute;
+                top:0px;
+                text-align:center;
+                i{
+                    position:absolute;
+                    top: 3px;
+                    left:11px;
+                }
+                &:hover{
+                    text-decoration:none;
+                }
+            }
+            .btn-left{
+                left:10px;
+            }
+            .btn-right{
+                right:4px;
+                padding: 3px 1px 3px 1px;
+                position: absolute;
+                top: 6px;
+                display: block;
+                border-radius: 5px;
+                display: inline-block;
+                width: 30px;
+                height: 28px;
+                text-align: center;
+                margin-right: 4px;
+                border: 1px solid #454648;
+                color: #454648;
+                i{
+                    top: 5px;
+                    left: 9px;
+                }
+            }
+            .backto{
+                left:10px;
+                padding: 3px 1px 3px 1px;
+                position: absolute;
+                top: 2px;
+                display: block;
+                width: 50px;
+                i{
+                    margin-top:1px;
+                }
+            }
+        }
+        .nav-btn{
+            padding:10px 0px;
+        }
+        .fix-border-top:after{
+            .getBefore(-2px);
+            width:100%;
+        }
+    }
+}
+
+@asideChildrenIterations: 15;
+.aside-children-appear (@i) when (@i > 0) {
+    .nav.main-nav.nav-children li:nth-child(@{i}){
+        .animation(asideFadeIn convert(30ms+@i*70ms, "s") ease-in);
+    }
+    .aside-children-appear(@i - 1);
+}
+.aside-children-appear(@asideChildrenIterations);

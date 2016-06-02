@@ -1,0 +1,94 @@
+body.app-aside-hover{
+    
+    .app-content,.app-footer{
+        margin-left:51px;
+        @media (max-width: @screen-xs-max) {
+            margin-left: 0px;
+        }
+    }
+    
+    .app-header{
+        .navbar-brand{
+            background-color: #fbfbfb;
+            border-color: transparent;
+            &:after{
+                background-color: transparent;
+            }
+        }
+    }
+    
+    .nav-tools{
+        display:none;
+    }
+    
+    .app-aside {   
+        width:51px;
+        position: fixed;
+        top: 41px;
+        bottom: 0;
+        overflow-y:hidden;
+        overflow-x:hidden;
+        z-index: 1030;
+        float:none;
+        .nav-wrapper > .main-nav{
+            &>li{
+                &>a{
+                    height:@asideFoldedHeight;
+                    &>div{
+                        display:none;
+                        &>span{
+
+                        }
+                        .nav-arrow{
+                            display:none;
+                        }
+                    } 
+                    &>i{
+                        left:10px;
+                    }
+                }
+                &>.nav-children{
+                    display:none; 
+                }
+                &.opened{
+                    &>.nav-children{
+                        display:none;
+                    }
+                }
+                &.text-wrapper{
+                    display:none;
+                }
+            }
+        }
+        &:hover{
+            width: @asideWidth;
+            overflow-y:auto;
+            .nav-wrapper > .main-nav{
+                .nav-tools{
+                    display:block;
+                }
+
+                &>li{
+                    &>a{
+                        height:auto;
+                        &>div{
+                            display:block;
+                            .nav-arrow{
+                                display:block;
+                            }
+                        } 
+                    }
+                    &.opened{
+                        &>.nav-children{
+                            display:block;
+                        }
+                    }
+                    &.text-wrapper,&.divider{
+                        display:block;
+                    }
+                }
+            }
+        }
+    }
+}
+

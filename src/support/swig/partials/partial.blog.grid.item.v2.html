@@ -1,0 +1,16 @@
+<div class="panel panel-default {{cover}} text-center no-b-i">
+    <div class="panel-body">
+        <div class="m-b-15">
+            <span class="label h3 no-m label-rounded font-montserrat {{textcolor}} text-uppercase ">{{tag}}</span>
+        </div>
+        <h3 class="no-m m-b-20 font-bold">
+            <a class="{{textcolor}}">{{title}}</a>
+        </h3>
+        <p class="no-m {{textcolor}}">
+            {{content}}
+        </p>
+    </div>
+    <div class="panel-footer item no-bg">
+        <a href="#" class="btn {% if textcolor=='text-white' %}btn-white{% else %}btn-primary{% endif %} btn-line btn-sm btn-rounded">Read more</a>
+    </div>
+</div>

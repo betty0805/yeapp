@@ -1,0 +1,241 @@
+.panel {
+    .border-radius(2px,2px,2px,2px);
+    .panel-heading{
+        padding: 8px 15px;
+        border-bottom: 1px solid #eee;
+        text-transform: uppercase;
+        font-size: 13px;
+        color:@defTextColor;
+        letter-spacing: 0.03em;
+    }
+    .panel-footer{
+        padding: 8px 15px;
+        border-top: 1px solid #eee;
+    }
+    .panel-settings{
+        display:inline-block;
+        float:right;
+        display:none;
+        &>a{
+            margin-left:3px;
+            .transition(all @defTransitionTime ease-in-out);
+            color:#ccc;
+            &:hover{
+                color:#797979;
+                text-decoration: none;
+            }
+        }
+    }
+    .panel-body{
+        height:auto;
+        .transition(height @defTransitionTime ease-in-out);
+    }
+    &.panel-draggable{
+        .panel-heading{
+            cursor: move;
+        }
+    }
+    &.panel-collapse{
+        .panel-heading{
+            border-bottom:none;
+        }
+        .panel-body{
+            overflow: hidden;
+            padding:0px !important;
+            height:0px !important;
+            margin:0px !important;
+        }
+    }
+    &.panel-progress{
+        position: relative;
+    }
+    &.panel-expand{
+        position: fixed;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        z-index:9999;
+        overflow-y: auto;
+        margin-bottom:0px;
+    }
+    &:hover{
+        .panel-settings{
+            display:inline-block;
+        }
+    }
+    &.panel-default{
+        border: 1px solid lighten(@separatorColorLt,8%);
+        .panel-heading{
+            background-color:#fff;
+        }
+        .panel-footer{
+            background-color:#fff;
+        }
+    }
+    &.flat{
+        border:none;
+        margin:0px;
+        .panel-heading{
+            color: #797979;
+        }
+    }
+    &>.panel-progress{
+        position: absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        background-color:rgba(255,255,255,0.5);
+        &>.app-progress-bar{
+            margin-top:-1px;
+        }
+        &>.app-progress-circle{
+            position: absolute;
+            top:50%;
+            left:50%;
+            margin-left:-12px;
+            margin-top:-12px;
+        }
+    }
+}
+
+.panel.no-border,.panel.no-b,.panel.no-b-i{
+    &>.panel-heading{
+        margin: -1px -1px 0 -1px;
+    }
+    &>.panel-body{
+        margin: 0px -1px -1px -1px;
+    }
+    &>.panel-footer{
+        margin: 0px -1px -1px -1px;
+    }
+}
+
+.panel-fix{
+    &.panel-heading{
+        margin: -1px -1px 0 -1px;
+    }
+    &.panel-body{
+        margin: 0px -1px -1px -1px;
+    }
+    &.panel-footer{
+        margin: 0px -1px -1px -1px;
+    }
+}
+
+.panel-fix-full{
+    margin:-1px;
+}
+
+.panel-fix-full-left{
+    margin:-1px 0px -1px -1px;
+}
+
+
+.panel-group{
+    .panel-heading{
+        border-bottom:none;
+    }
+}
+
+.panel .accordion-toggle {
+    display: block;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.panel.panel-arrow{
+    position:relative;
+    &:after, &:before {
+        bottom: 100%;
+        left: 29px;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+    }
+    &:after {
+        border-color: rgba(255, 255, 255, 0);
+        border-bottom-color: #fff;
+        border-width: 6px;
+        margin-left: -6px;
+    }
+    &:before {
+        border-color: rgba(204, 204, 204, 0);
+        border-bottom-color: inherit;
+        border-width: 7px;
+        margin-left: -7px;
+    }
+}
+
+.app-grid-panels{
+    @media (max-width: @screen-xs-max) {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .row{
+        margin-left: -10px;
+        margin-right: -10px;
+        @media (max-width: @screen-xs-max) {
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+        &>div[class^="col-"]{
+            padding-left: 10px;
+            padding-right: 10px;
+            @media (max-width: @screen-xs-max) {
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+        }
+    }
+    .panel{
+        height: 400px;
+        overflow: hidden;
+        position:relative;
+        .panel-body{
+            position: absolute;
+            top:0px;
+            left:0px;
+            right:0px;
+            padding:30px 30px 70px 30px;
+            @media (max-width: @screen-xs-max) {
+                position: relative;
+                padding:30px 15px 30px 15px;
+            }
+        }
+        .panel-footer{
+            position: absolute;
+            bottom:0px;
+            left:0px;
+            right:0px;
+            padding:10px 30px 30px 30px;
+            border-top:none;
+            @media (max-width: @screen-xs-max) {
+                position: relative;
+                padding:15px 15px 15px 15px;
+            }
+            @media (max-width: @screen-sm-max) {
+                font-size:12px;
+            }
+        }
+        @media (max-width: @screen-xs-max) {
+            height: auto;
+        }
+        @media (max-width: @screen-sm-max) {
+            p{
+                font-size:14px !important;
+                line-height: 22px;
+            }
+        }
+        &.app-grid-panel-main{
+            .panel-body{
+                
+            }
+        }
+    }
+}

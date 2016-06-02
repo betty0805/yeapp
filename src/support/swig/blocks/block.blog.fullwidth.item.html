@@ -1,0 +1,61 @@
+<div class="content-padding {{helperClass}}">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 font-montserrat">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <span class="label label-info h3 no-m label-rounded label-md">{{tag}}</span>
+                    </div>
+                    <div class="col-sm-6 text-right text-muted">
+                        10 mins read
+                    </div>
+                </div>
+                <div>
+                    <h1 class="no-m m-t-b-30"><a>{{title}}</a></h1>
+                </div>
+                <div>
+                    <p class="text-hd line-h-hd no-m">
+                        {{content}} [...]
+                    </p>
+                </div>
+                <div class="m-t-5 text-muted">
+                    <a class="inline-block m-r-3">
+                        <i class="fa fa-comment-o "></i>  {{comments}}
+                    </a>
+                    <a class="inline-block">
+                        <i class="fa fa-heart-o "></i> {{likes}}
+                    </a>
+                </div>
+                <div class="m-t-30"> 
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="media font-montserrat">
+                                <div class="media-left"><img src="img/avatars/{{user.avatar}}" class="thumb-sm img-circle inline-block m-r-3" alt="pic"></div>
+                                <div class="media-body">
+                                    <a class="text-lg block text-muted">
+                                        {{user.name}}
+                                    </a>
+                                    <div>
+                                        <span class="text-muted">{{time}}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 text-right">
+                            <a class="btn btn-default btn-rounded btn-icon">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a class="btn btn-default btn-rounded btn-icon">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a class="btn btn-default btn-rounded btn-icon">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

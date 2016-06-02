@@ -1,0 +1,109 @@
+.generate-app-bg-color(@name,@bg,@bgLt,@bgDk){
+    .@{name}{
+        background-color: @bg;
+        &>.lt,&.lt{
+            background-color: @bgLt;
+        }
+        &>.dk,&.dk{
+            background-color: @bgDk;
+        }
+    }
+    
+    .@{name}-i{
+        background-color: @bg !important;
+        &>.lt,&.lt{
+            background-color: @bgLt !important;
+        }
+        &>.dk,&.dk{
+            background-color: @bgDk !important;
+        }
+    }
+}
+
+.app-icon(@top:6px,@left:15px){
+    padding: 4px 1px 3px 1px;
+    position:absolute;
+    top:@top;
+    left:@left;
+    display:block;
+    border-radius: 5px;
+    display: inline-block;
+    width: 30px;
+    height:30px;
+    text-align: center;
+    margin-right: 4px;
+}
+
+.getBefore(@top:0px){
+    content: '';
+    position: absolute;
+    top: @top;
+    height: 1px;
+    left: 0px;
+    right: 0px;
+}
+
+.getAfter(){
+    content: '';
+    position: absolute;
+    height: 1px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.arrow-up(@px,@color) {
+    border-left: @px solid transparent;
+    border-right: @px solid transparent;
+    border-bottom: @px solid @color;
+}
+
+.arrow-down(@px,@color) {
+    border-left: @px solid transparent;
+    border-right: @px solid transparent;
+    border-top: @px solid @color;
+}
+
+.arrow-right(@px,@color) {
+    border-top: @px solid transparent;
+    border-bottom: @px solid transparent;
+    border-left: @px solid @color;
+}
+
+.arrow-left(@px,@color) {
+    border-top: @px solid transparent;
+    border-bottom: @px solid transparent; 
+    border-right:@px solid @color; 
+}
+
+.button-variant-line(@color; @background; @border) {
+    color: @color;
+    background-color: @background;
+    border-color: @border;
+}
+
+.generateBgColor(@color){
+    background-color:@color !important;
+}
+
+.generateFontColor(@color){
+    color:@color !important;
+}
+
+.boxShadowHelper(@level: 1){
+    & when (@level = 1) {
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+    & when (@level = 2) {
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    }
+    & when (@level = 3) {
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    }
+    & when (@level = 4) {
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+    & when (@level = 5) {
+        box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    }
+}

@@ -1,0 +1,186 @@
+@numberOfThemes: 6; //controls theme loop
+.colors(){
+    //main ul class
+    //ul properties
+    .main-nav{ 
+	
+	background-color: @asideBgColor;
+        &.nav-children{
+            background-color: @asideChildrenBgColor;
+            &>li{
+                &>a{
+                    &:hover{
+                        background-color: @asideItemActiveBgColor;
+                    }
+                }
+            }
+        }
+	li
+	{
+	    &>a{
+		color: @asideFontColor;
+		&>i{
+		    color: @asideFontColor;
+                    background-color: @asideIconBgColor;
+		}
+		div{
+		    &>.nav-arrow{
+			color:@asideFontColor;
+		    }
+		}
+		&:hover{
+                    background-color: @asideChildrenBgColor;
+		    color: @asideFontHoverColor;    
+		    i{
+			color: @asideFontHoverColor; 
+		    }
+                    div{
+                        &>i{
+                            color: @asideFontHoverColor;
+                        }
+                    }
+		}
+
+	    }
+            &.divider{
+                border-color: @asideItemBorderBottomColor;
+            }
+            &.active{
+                &>a{
+		    background-color: @asideItemActiveBgColor;
+		    color: @asideItemActiveFontColor;
+		    &>i{
+			color:@asideItemActiveFontColor;
+                        //background-color: @asideBgColor;
+		    }
+                    border-color: @asideItemActiveBorderTopColor;
+		    div{
+                        &>i{
+                            color: @asideFontHoverColor;
+                        }
+			&:before{
+			    background-color: transparent;
+			}
+		    }
+		}
+            }
+	    &.opened{
+		&>a{
+                    background-color: @asideChildrenBgColor;
+		    i,div,span{
+			color:@asideItemActiveFontColor;
+		    }
+		    &>i{}
+		}
+	    }
+	    &:last-child{
+		div{
+		    &:after{
+		    } 
+		}
+	    }
+	    .nav-tools{
+		.clearfix;
+                a{
+                    color: @asideFontColor;
+                    &:hover{
+                        color: @asideFontHoverColor; 
+                    }
+                }
+		.btn-app{
+		    border: 1px solid @asideItemActiveFontColor;
+			color:@asideItemActiveFontColor;
+		}
+		.btn-left,.btn-right{
+		    color:@asideFontColor;
+		    &:hover{
+			i{
+			    color: @asideFontHoverColor; 
+			}
+		    }
+		}
+	    }
+	}
+    }
+
+        
+}
+
+.buildThemes(@index) when (@index < @numberOfThemes + 1) {
+    .themeDefs(@index);
+    
+    .bg-@{themeName}{
+        background-color: @asideBgColor;
+    }
+    
+    .text-@{themeName}{
+        color: @asideBgColor;
+    }
+
+    body.@{themeName}{
+        
+	.app-header{
+            .navbar-brand{
+                background-color: @asideBgColor;
+                border-right:@asideBorderRight;
+                &:after{
+                    background-color: @headerBorderBottomColor;
+                }
+            }
+	}
+        
+	.app-aside{
+	    border-right: @asideBorderRight;
+            background-color: @asideBgColor;
+            .app-nav-caret{
+                background-color: @asideBgColor;
+            }
+	}
+	
+	.app-header{
+	    background-color: @statusBarBgColor;
+            .navbar-collapse{}
+	}
+        
+        &.app-aside-docked{
+            .app-aside{
+                border-bottom: 1px solid @headerBorderBottomColor;
+                border-right: none;
+                .nav-wrapper >.main-nav{
+                    &>li{}
+                }
+            }
+        }
+        
+	.colors;
+        
+        .hoverAsideStyle(){
+            border-top: @asideBorderRight;
+            border-bottom: @asideBorderRight;
+            border-right: @asideBorderRight;
+            border-left: @asideBorderRight;
+        }
+        
+        &.app-aside-folded,&.app-aside-docked{ 
+            .nav-wrapper >.main-nav{
+                &>li{
+                    &>.nav-children{
+                        .hoverAsideStyle();
+                    }
+                }
+            }
+            
+            .app-aside >.nav-children{
+                .hoverAsideStyle();
+            }
+        } 
+    }
+    
+    .colors;
+    .buildThemes(@index + 1);
+}
+
+//stop loop
+.buildThemes(@index) {}
+//start theme building loop
+.buildThemes(1);

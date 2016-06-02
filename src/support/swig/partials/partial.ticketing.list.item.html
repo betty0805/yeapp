@@ -1,0 +1,47 @@
+<!-- START: Ticket item -->
+<div class="panel panel-default">
+    <div class="panel-body p-30">
+        <div class="row r-sm-table bg-white">
+            <div class="col-md-2 col-sm-cell">
+                <div class="m-b-10">
+                    <span class="label {% if type=='new' %}label-primary{% elseif type=='success' %}label-success{% else %}label-danger{% endif %} b-rad-100 label-line inline-block">{{type}}</span>
+                </div>
+                <div class="h4 text-muted">{{time}}</div>
+                <div>
+                    <a>
+                        <img src="img/avatars/{{user.avatar}}" class="img-circle pull-left avatar-fix" alt="avatar">
+                        <div>
+                            <div class="font-normal">{{user.name}}</div>
+                            <div class="text-muted text-xs">{{user.company}}</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-7 col-sm-cell">
+                <h4 class="font-normal no-m m-b-10">{{title}}</h4>
+                <p>
+                    {{description}}
+                </p>
+                <ul class="list-unstyled tag-list inline-block no-m">
+                    {% for tag in tags %}
+                        <li><a>{{tag}}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-cell">
+                <div>
+                    {% for auser in assigned %}
+                        <a class="avatar m-r-3 m-b-5 inline-block">
+                            <img src="img/{{auser.avatar}}" class="img-circle thumb-xxs" alt="pic">
+                            <i class="on bottom"></i>
+                        </a>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="col-md-1 col-sm-cell">
+                <a><i class="icon-arrows icon-arrows-slim-right linea-md"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End: Ticket item -->

@@ -1,0 +1,196 @@
+.btn{
+    .transition(all @defTransitionTime ease-in-out);
+}
+
+.btn-default {
+    &.btn-line{
+        .button-variant(#333333; #fff; #797979);
+        &:hover{
+            .button-variant-line(#333333; #fff; #797979);
+        }
+        &:active,&:focus,&.active{
+            color:#333333;
+        }
+    }
+
+}
+.btn-primary {
+    &.btn-line{
+        .button-variant(@btn-primary-bg; @btn-primary-bg; @btn-primary-border);
+        &:hover{
+            .button-variant-line(#fff; @btn-primary-bg; @btn-primary-border);
+        }
+        &:active,&:focus,&.active{
+            color:#fff;
+        }
+    }
+}
+// Success appears as green
+.btn-success {
+    &.btn-line{
+        .button-variant(@btn-success-bg; @btn-success-bg; @btn-success-border);
+        &:hover{
+            .button-variant-line(#fff; @btn-success-bg; @btn-success-border);
+        }
+        &:active,&:focus,&.active{
+            color:#fff;
+        }
+    }
+}
+// Info appears as blue-green
+.btn-info {
+    &.btn-line{
+        .button-variant(@btn-info-bg; @btn-info-bg; @btn-info-border);
+        &:hover{
+            .button-variant-line(#fff; @btn-info-bg; @btn-info-border);
+        }
+        &:active,&:focus,&.active{
+            color:#fff;
+        }
+    }
+}
+// Warning appears as orange
+.btn-warning {
+    &.btn-line{
+        .button-variant(@btn-warning-bg; @btn-warning-bg; @btn-warning-border);
+        &:hover{
+            .button-variant-line(#fff; @btn-warning-bg; @btn-warning-border);
+        }
+        &:active,&:focus,&.active{
+            color:#fff;
+        }
+    }
+}
+// Danger and error appear as red
+.btn-danger {
+    &.btn-line{
+        .button-variant(@btn-danger-bg; @btn-danger-bg; @btn-danger-border);
+        &:hover{
+            .button-variant-line(#fff; @btn-danger-bg; @btn-danger-border);
+        }
+        &:active,&:focus,&.active{
+            color:#fff;
+        }
+    }
+}
+
+.btn-white{
+    &.btn-line{
+        .button-variant(#fff; #fff; #fff);
+        &:hover{
+            .button-variant-line(#fff; #fff; #fff);
+        }
+        &:active,&:focus,&.active,&:hover{
+            color:#58666e !important;
+            background-color: #fff !important;
+            border-color:#fff !important;
+        }
+    }
+}
+
+.btn-black{
+    .button-variant(#000; #000; #000);
+    color:#fff !important;
+    &.btn-line{
+        &:hover{
+            .button-variant-line(#000; #000; #000);
+        }
+        &:active,&:focus,&.active,&:hover{
+            color:#fff !important;
+            background-color: #000 !important;
+            border-color:#000 !important;
+        }
+    }
+}
+
+.btn-b-2{
+    border-width:2px !important;
+}
+
+.btn-rounded.btn-lg {
+  padding-right: 25px !important;
+  padding-left: 25px !important;
+}
+
+.btn,button{
+    &:focus {
+        outline: none !important;
+        outline: 0;
+    }
+    &:active,&.active{
+        outline: none !important;
+        outline: 0;
+    }
+}
+.btn{
+    &:active,&.active{
+        .box-shadow(inset 0 1px 2px rgba(0, 0, 0, 0.125));
+    }
+
+    &.btn-rounded {
+        padding-right: 15px;
+        padding-left: 15px;
+        border-radius: 50px;
+    }
+    &.btn-line{
+        background-color:transparent;
+        &.disabled,&[disabled]{
+            background-color:transparent;
+              opacity: 0.4;
+        }
+        
+    }
+
+}
+
+.btn-link{
+    color:@brand-primary;
+    &:hover{
+        color:@brand-primary;
+    }
+}
+
+.btn-text{
+    font-size:16px;
+    color:@brand-primary;
+    &:hover{
+        color:@brand-primary;
+    }
+    &:focus{
+        color:@brand-primary;
+    }
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+.btn-icon{
+    padding:0px !important;
+    text-align:center; 
+    width: 34px;
+    height: 34px;
+    padding: 0!important;
+    text-align: center;
+    i {
+      position: relative;
+      top: -1px;
+      line-height: 34px;
+    }
+    &.btn-xs{
+        width:30px;
+        height:30px;
+        i{
+            top: -1px;
+            line-height: 30px;
+        }
+    }
+}
+
+.btn>i.pull-left, .btn>i.pull-right {
+  line-height: 1.42857143;
+}
+
+
+

@@ -1,0 +1,20 @@
+<div class="panel panel-default">
+    <div class="panel-heading m-t-b-10 no-b-i">
+        <h5 class="no-m no-text-transform font-bold"><span class="{{item_icon}} icon-font pull-left m-r-10"></span> <span class="inline-block m-t-3">{{item_name}}</span> </h5>
+    </div>
+    <div class="panel-body no-p-t text-lg">
+        <div class="row row-gap-10 xs-no-m-i">
+            {% for initems in item_items %}
+                <div class="col-sm-4 xs-no-p-i m-b-10">
+                    <a class="">{{initems}}</a>
+                </div>
+                {% if loop.index%3 == 0 %}
+                    </div><div class="row row-gap-10 xs-no-m-i">
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+    <div class="panel-footer bg-light lt">
+        <a class="font-bold">Read more</a>
+    </div>
+</div>

@@ -1,0 +1,41 @@
+body.modal-open{
+    .app-wrapper{
+        overflow-y:hidden !important;
+        .app-content{
+            overflow:hidden !important;
+        }
+    }
+}
+
+.modal-backdrop{
+    background-color:#eee;
+}
+
+.modal-backdrop.in {
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+}
+
+.modal-content{
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.15),0px 0px 1px 1px rgba(0,0,0,0.1);
+    border:none;
+}
+
+.modal-inline{
+    position: relative;
+    top: auto;
+    right: auto;
+    left: auto;
+    bottom: auto;
+    z-index: 1;
+    display: block;
+    overflow: hidden;
+}
+
+/*
+    //Bootstrap modal backdrop bugfix
+    .modal-backdrop {
+        bottom: 0;
+        position: fixed;
+    }
+*/

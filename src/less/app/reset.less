@@ -1,0 +1,59 @@
+a {
+    outline:0;
+}
+
+a:hover{
+    cursor:pointer;
+}
+
+a:hover, a:active, a:focus, a:link, a:visited {
+    outline: 0;
+    outline: 0 !important;
+    outline-style:none;
+}
+
+button, object, embed { 
+    outline: 0;
+}
+
+/* All Input elements */
+input::-moz-focus-inner { 
+    border: 0; 
+}
+
+/* Or more specifically*/
+input[type="submit"]::-moz-focus-inner, input[type="button"]::-moz-focus-inner{
+    border: 0; 
+}
+
+@media (max-width: @screen-sm-max) and (-webkit-min-device-pixel-ratio:0) {
+    .form-control,input,select,textarea{
+        font-size: 16px;
+    }
+}
+
+.dropdown-menu{
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.15),0px 0px 1px 1px rgba(0,0,0,0.1);
+    &.dropdown-alt{
+        &>li{
+            &>a{
+                padding:3px 15px;
+            }
+        }
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(50,50,50,0.2);
+    .border-radius(20px,20px,20px,20px);
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(50,50,50,0.1);
+}
+

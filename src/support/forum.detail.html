@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>YeApp - Flat web application template & UI KIT with Bootstrap 3 and AngularJS</title>
+        
+        <!-- start: CSS -->
+        <link href='fonts/opensans/font.css' rel='stylesheet' type='text/css'>
+        <link href='fonts/montserrat/font.css' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="css/result.css">
+        <link rel="stylesheet" type="text/css" href="css/animate.css">
+        <link rel="stylesheet" type="text/css" href="fonts/linea/_basic/_ICONFONT/styles.css">
+        <link rel="stylesheet" type="text/css" href="fonts/linea/_arrows/_ICONFONT/styles.css">
+        <link rel="stylesheet" type="text/css" href="fonts/linea/_software/_ICONFONT/styles.css">
+        <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="js/nprogress/nprogress.css">
+        <!-- end: CSS -->
+        
+        
+    <link rel="stylesheet" type="text/css" href="js/rainbowjs/themes/github.css">
+    <link rel="stylesheet" type="text/css" href="js/trumbowyg/dist/ui/trumbowyg.min.css">
+
+    </head>
+    <body class="bg-white has-info-bar">
+        
+        
+
+    <!-- start: Info bar -->
+<div class="bg-black color-white info-bar">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 info-bar-left">
+                <ul class="clearfix">
+                    <li>
+                        <a><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a><i class="fa fa-behance"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-6 info-bar-right">
+                <ul class="clearfix">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle font-montserrat" data-toggle="dropdown">English <i class="fa fa-angle-down"></i></a>
+                        <div class="dropdown-menu animated fadeIn no-b-i" style="min-width:100%;">
+                            <div class="text-center">
+                                <div class="b-b-b-l p-b-5 m-b-5">
+                                    <a class="display-block">English</a>
+                                </div>
+                                <div class="b-b-b-l p-b-5 m-b-5">
+                                    <a class="display-block">German</a>
+                                </div>
+                                <div>
+                                    <a class="display-block">Spanish</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle font-montserrat" data-toggle="dropdown" role="button">Sign In <i class="fa fa-angle-down"></i></a>
+                        <div class="dropdown-menu drop-down-sign-in p-30 animated fadeIn no-b-i">
+                            <form>
+                                <div class="form-group form-group-alt no-m-b no-b-b">
+                                    <input type="text" class="form-control no-m-t" placeholder="Username" style="width:200px;">
+                                    <span></span>
+                                </div>
+                                <div class="form-group form-group-alt no-m-b">
+                                    <input type="password" class="form-control no-m-t" placeholder="Password" style="width:200px;">
+                                    <span></span>
+                                </div>
+                                <div class="m-t-20">
+                                    <button class="btn btn-primary btn-block btn-rounded btn-line">Sign In</button>
+                                </div>
+                            </form>
+                            <div class="m-t-20">
+                                <a>Not have an Account? <span class="font-bold">Sign Up</span></a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end: Info bar -->
+
+<!-- start: Navigation/Header -->
+<div id="header" class="navbar app-navbar app-navbar-v2 app-navbar-dropdown-hover navbar-fixed-top font-montserrat">
+    <div class="container xs-no-p">
+        <div class="row no-m">
+            <div class="col-md-12">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed no-p-i m-t-b-5 no-m-r" data-toggle="collapse" data-target="#landingPageNavbarCollapse">
+                        <i class="icon icon-arrows-hamburger-2 icon-font collapse-fix"></i>
+                    </button>
+                    <a href="index.html" class="navbar-brand mobile-m-l no-p"> 
+                        <img id="brand-logo" src="img/yeapp-logo-dk.png" alt="logo" style="height:30px;">
+                    </a>
+                </div>
+                <div id="landingPageNavbarCollapse" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                                Ticketing <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeIn">
+                                <li><a href="ticketing.list.html">Tickets list</a></li>
+                                <li><a href="ticketing.grid.html">Tickets grid</a></li>
+                                <li><a href="ticketing.detail.html">Ticket detail</a></li>
+                                <li><a href="ticketing.open.html">Open ticket</a></li>
+                                <li><a href="ticketing.open.fullwidth.html">Open ticket full</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                                Forum <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeIn">
+                                <li><a href="forum.table.html">Forum table</a></li>
+                                <li><a href="forum.grid.html">Forum grid</a></li>
+                                <li><a href="forum.table.fullwidth.html">Forum table full</a></li>
+                                <li><a href="forum.grid.fullwidth.html">Forum grid full</a></li>
+                                <li><a href="forum.detail.html">Forum detail</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                                Knowledge <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeIn">
+                                <li><a href="knowledge.3col.html">3 columns</a></li>
+                                <li><a href="knowledge.2col.html">2 columns</a></li>
+                                <li><a href="knowledge.1col.html">1 columns</a></li>
+                                <li><a href="knowledge.detail.html">Knowledge detail</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                                Blog <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeIn">
+                                <li><a href="blog.fullwidth.html">Full-width</a></li>
+                                <li><a href="blog.grid.html">Grid list</a></li>
+                                <li><a href="blog.standard.html">Standard</a></li>
+                                <li><a href="blog.smallthumb.html">Small thumbnails</a></li>
+                                <li><a href="blog.post.fullwidth.html">Post full</a></li>
+                                <li><a href="blog.post.html">Post</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="contact.html">
+                                Contact
+                            </a>
+                        </li>
+                        <li>
+                            <div class="m-t-14 m-l-10">
+                                <a href="livechat.html" class="btn btn-success btn-sm btn-rounded btn-line btn-b-2 font-bold">Live chat</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end: Navigation/Header -->
+
+
+        
+        
+
+    <div class="img-cover img-cover-light" style="background-image: url('img/bgimg/big/30.jpg')">
+    <div class="container p-t-b-50 m-t-60">
+        <div class="row text-center">
+            <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                <div class="m-t-b-15">
+                    <div class="subheading text-muted">Main category</div>
+                    <h1 class="no-m font-thin m-t-3">Theme Development</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        
+        
+
+    <div class="p-t-b-10 b-b-b-l">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 m-t-b-10">
+                    <strong>2,434</strong> topics in base
+                </div>
+                <div class="col-sm-6 text-right m-t-b-10">
+                    <ol class="breadcrumb no-p-r-l no-m no-bg no-p">
+                        <li><a href="#">Home</a></li>
+                        <li class="active">Forum detail</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="content-padding p-t-20">
+    <div class="container">
+        <div class="row xs-no-m">
+            <div class="col-md-12 xs-no-p">
+
+                <!-- START: COMMENT -->
+                <div class="panel panel-default">
+                    <div class="layout-fixed">
+                        <div class="column col-200 b-b-r-l">
+                            <div class="p-15 text-center">
+                                <div><img src="img/avatar7.jpg" class="thumb-lg img-circle" alt="pic"></div>
+                                <div class="h4 no-m m-t-b-10">Jonh Doe</div>
+                                <div class="m-b-10"><span class="label label-line label-success">administrator</span></div>
+                                <div class="text-xs text-muted">
+                                    <div>Posts: 30</div>
+                                    <div>Joined: 16 Feb 2014</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column col-100p">
+                            <div class="p-15">
+                                <div>
+                                    <div class="h4 no-m m-b-5">Post title <span class="pull-right">#1</span></div>
+                                    <div class="m-b-10 text-muted">6 mins ago</div>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                </p>
+                                <div>
+                                    <pre class="no-b-i m-b-10"><code data-language="javascript">function Avengers(dataservice, logger) {
+    var vm = this;
+    vm.avengers = [];
+    vm.getAvengers = getAvengers;
+    vm.title = 'Avengers';
+
+    activate();
+
+    function activate() {
+        return getAvengers().then(function() {
+            logger.info('Activated Avengers View');
+        });
+    }
+
+    function getAvengers() {
+        return dataservice.getAvengers().then(function(data) {
+            vm.avengers = data;
+            return vm.avengers;
+        });
+    }
+}</code></pre>
+                                </div>
+
+
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                </p>
+                                <div class="text-italic text-muted text-xs">
+                                    This is my signature!
+                                </div>
+
+                            </div>
+                            <div class="p-5 p-r-l-10 clearfix bg-light lt">
+                                <a class="text-success"><i class="fa fa-angle-up fa-fw"></i></a>
+                                <a class="text-danger m-r-10">1<i class="fa fa-angle-down fa-fw"></i></a>
+                                <a class="text-xs pull-right m-l-5 p-3">Share</a>
+                                <a class="text-xs pull-right p-3">Reply</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END: COMMENT -->
+                
+                <!-- START: COMMENT -->
+                <div class="panel panel-default">
+                    <div class="layout-fixed">
+                        <div class="column col-200 b-b-r-l">
+                            <div class="p-15 text-center">
+                                <div><img src="img/avatar6.jpg" class="thumb-lg img-circle" alt="pic"></div>
+                                <div class="h4 no-m m-t-b-10">Zack Joe</div>
+                                <div class="m-b-10"><span class="label label-line label-success">lawyer</span></div>
+                                <div class="text-xs text-muted">
+                                    <div>Posts: 30</div>
+                                    <div>Joined: 16 Feb 2014</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column col-100p">
+                            <div class="p-15">
+                                <div>
+                                    <div class="h4 no-m m-b-5">Post title <span class="pull-right">#2</span></div>
+                                    <div class="m-b-10 text-muted">6 mins ago</div>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidid
+                                </p>
+                                <div class="bg-light lt p-20 m-b-10">
+                                    <div class="h5 no-m m-b-5 text-italic">Jonathan Nick wrote:</div>
+                                    <p class="no-m">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    </p>
+                                </div>
+                                <div class="text-italic text-muted text-xs">
+                                    This is my signature!
+                                </div>
+
+                            </div>
+                            <div class="p-5 p-r-l-10 clearfix bg-light lt">
+                                <a class="text-success"><i class="fa fa-angle-up fa-fw"></i></a>
+                                <a class="text-danger m-r-10">1<i class="fa fa-angle-down fa-fw"></i></a>
+                                <a class="text-xs pull-right m-l-5 p-3">Share</a>
+                                <a class="text-xs pull-right p-3">Reply</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END: COMMENT --> 
+                
+                <!-- START: COMMENT -->
+                <div class="panel panel-default">
+                    <div class="layout-fixed">
+                        <div class="column col-200 b-b-r-l">
+                            <div class="p-15 text-center">
+                                <div><img src="img/avatar5.jpg" class="thumb-lg img-circle" alt="pic"></div>
+                                <div class="h4 no-m m-t-b-10">Joseph Blak</div>
+                                <div class="m-b-10"><span class="label label-line label-danger">programmer</span></div>
+                                <div class="text-xs text-muted">
+                                    <div>Posts: 30</div>
+                                    <div>Joined: 16 Feb 2014</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column col-100p">
+                            <div class="p-15">
+                                <div>
+                                    <div class="h4 no-m m-b-5">Post title <span class="pull-right">#3</span></div>
+                                    <div class="m-b-10 text-muted">6 mins ago</div>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet, sed do eiusm consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidid
+                                </p>
+                                
+                                                                <div>
+                                    <pre class="no-b-i m-b-10"><code data-language="javascript">function Avengers(dataservice, logger) {
+// Much better!
+
+var cluster = require('cluster');
+var PORT = +process.env.PORT || 1337;
+
+if (cluster.isMaster) {
+  // In real life, you'd probably use more than just 2 workers,
+  // and perhaps not put the master and worker in the same file.
+  //
+  // You can also of course get a bit fancier about logging, and
+  // implement whatever custom logic you need to prevent DoS
+  // attacks and other bad behavior.
+  //
+  // See the options in the cluster documentation.
+  //
+  // The important thing is that the master does very little,
+  // increasing our resilience to unexpected errors.
+
+  cluster.fork();
+  cluster.fork();
+
+  cluster.on('disconnect', function(worker) {
+    console.error('disconnect!');
+    cluster.fork();
+  });
+
+} else {
+  // the worker
+  //
+  // This is where we put our bugs!
+
+  var domain = require('domain');
+
+  // See the cluster documentation for more details about using
+  // worker processes to serve requests.  How it works, caveats, etc.
+
+  var server = require('http').createServer(function(req, res) {
+    var d = domain.create();
+    d.on('error', function(er) {
+      console.error('error', er.stack);
+
+      // Note: we're in dangerous territory!
+      // By definition, something unexpected occurred,
+      // which we probably didn't want.
+      // Anything can happen now!  Be very careful!
+
+      try {
+        // make sure we close down within 30 seconds
+        var killtimer = setTimeout(function() {
+          process.exit(1);
+        }, 30000);
+        // But don't keep the process open just for that!
+        killtimer.unref();
+
+        // stop taking new requests.
+        server.close();
+
+        // Let the master know we're dead.  This will trigger a
+        // 'disconnect' in the cluster master, and then it will fork
+        // a new worker.
+        cluster.worker.disconnect();
+
+        // try to send an error to the request that triggered the problem
+        res.statusCode = 500;
+        res.setHeader('content-type', 'text/plain');
+        res.end('Oops, there was a problem!\n');
+      } catch (er2) {
+        // oh well, not much we can do at this point.
+        console.error('Error sending 500!', er2.stack);
+      }
+    });
+
+    // Because req and res were created before this domain existed,
+    // we need to explicitly add them.
+    // See the explanation of implicit vs explicit binding below.
+    d.add(req);
+    d.add(res);
+
+    // Now run the handler function in the domain.
+    d.run(function() {
+      handleRequest(req, res);
+    });
+  });
+  server.listen(PORT);
+}
+}</code></pre>
+                                </div>
+
+                            </div>
+                            <div class="p-5 p-r-l-10 clearfix bg-light lt">
+                                <a class="text-success"><i class="fa fa-angle-up fa-fw"></i></a>
+                                <a class="text-danger m-r-10">1<i class="fa fa-angle-down fa-fw"></i></a>
+                                <a class="text-xs pull-right m-l-5 p-3">Share</a>
+                                <a class="text-xs pull-right p-3">Reply</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END: COMMENT --> 
+                
+                <!-- START: COMMENT -->
+                <div class="panel panel-default">
+                    <div class="layout-fixed">
+                        <div class="column col-200 b-b-r-l">
+                            <div class="p-15 text-center">
+                                <div><img src="img/avatar3.jpg" class="thumb-lg img-circle" alt="pic"></div>
+                                <div class="h4 no-m m-t-b-10">Tik Uhrin</div>
+                                <div class="m-b-10"><span class="label label-line label-default">baker</span></div>
+                                <div class="text-xs text-muted">
+                                    <div>Posts: 30</div>
+                                    <div>Joined: 16 Feb 2014</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column col-100p">
+                            <div class="p-15">
+                                <div>
+                                    <div class="h4 no-m m-b-5">Post title <span class="pull-right">#4</span></div>
+                                    <div class="m-b-10 text-muted">6 mins ago</div>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt  ed do eiusmod tempor incididunt  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt  ed do eiusmod tempor incidid ed do eiusmod tempor incididunt  ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidid
+                                </p>
+                                <blockquote>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                    <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                                </blockquote>
+
+                            </div>
+                            <div class="p-5 p-r-l-10 clearfix bg-light lt">
+                                <a class="text-success"><i class="fa fa-angle-up fa-fw"></i></a>
+                                <a class="text-danger m-r-10">1<i class="fa fa-angle-down fa-fw"></i></a>
+                                <a class="text-xs pull-right m-l-5 p-3">Share</a>
+                                <a class="text-xs pull-right p-3">Reply</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END: COMMENT -->
+                
+                <!-- START: COMMENT -->
+                <div class="panel panel-default">
+                    <div class="layout-fixed">
+                        <div class="column col-200 b-b-r-l">
+                            <div class="p-15 text-center">
+                                <div><img src="img/avatar2.jpg" class="thumb-lg img-circle" alt="pic"></div>
+                                <div class="h4 no-m m-t-b-10">Bonde James</div>
+                                <div class="m-b-10"><span class="label label-line label-default">NodeJS programmer</span></div>
+                                <div class="text-xs text-muted">
+                                    <div>Posts: 30</div>
+                                    <div>Joined: 16 Feb 2014</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column col-100p">
+                            <div class="p-15">
+                                <div>
+                                    <div class="h4 no-m m-b-5">Post title <span class="pull-right">#5</span></div>
+                                    <div class="m-b-10 text-muted">6 mins ago</div>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt  ed do eiusmod tempor incididunt  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt  ed do eiusmod tempor incidid ed do eiusmod tempor incididunt  ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidid
+                                </p>
+                                <blockquote>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                    <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                                </blockquote>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt  ed do eiusmod tempor incididunt  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt  ed do eiusmod tempor incidid ed do eiusmod tempor incididunt  ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidid
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt  ed do eiusmod tempor incididunt  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt  ed do eiusmod tempor incidid ed do eiusmod tempor incididunt  ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidid
+                                </p>
+
+                            </div>
+                            <div class="p-5 p-r-l-10 clearfix bg-light lt">
+                                <a class="text-success"><i class="fa fa-angle-up fa-fw"></i></a>
+                                <a class="text-danger m-r-10">1<i class="fa fa-angle-down fa-fw"></i></a>
+                                <a class="text-xs pull-right m-l-5 p-3">Share</a>
+                                <a class="text-xs pull-right p-3">Reply</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END: COMMENT -->
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <div class="content-padding b-b-t-l">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="subheading">JOIN THE DISCUSSION</div>
+<div class="media">
+    <div class="media-left"><img src="img/avatar7.jpg" class="thumb-sm img-circle inline-block m-r-3" alt="pic"></div>
+    <div class="media-body">
+        <div class="m-b-10">
+            <textarea id="msgTextarea" class="form-control" ></textarea>
+        </div>
+        <div>
+            <a class="btn bg-facebook color-white btn-rounded btn-icon">
+                <i class="fa fa-facebook"></i>
+            </a>
+            <a class="btn bg-twitter color-white btn-rounded btn-icon">
+                <i class="fa fa-twitter"></i>
+            </a>
+            <a class="btn bg-googleplus color-white btn-rounded btn-icon">
+                <i class="fa fa-google-plus"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        
+        
+
+    <!-- start: Footer/Contact -->
+<div id="contact" class="content-padding font-thin bg-grey2 text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3 col-xs-12 m-b-20 xs-text-center">
+                <div class="h4 no-m m-b-10 subheading subheading-lg">OUR SERVICES</div>
+                <ul class="list-unstyled hint-text">
+                    <li class="m-b-10"><i class="fa fa-angle-right"></i> AngularJS development</li>
+                    <li class="m-b-10"><i class="fa fa-angle-right"></i> BigData analyse</li>
+                    <li class="m-b-10"><i class="fa fa-angle-right"></i> NodeJS development</li>
+                    <li class="m-b-10"><i class="fa fa-angle-right"></i> Fancy apps</li>
+                    <li><i class="fa fa-angle-right"></i> Cisco networks</li>
+                </ul>
+            </div>
+
+            <div class="col-sm-3 m-b-20 xs-text-center">
+                <div class="h4 no-m m-b-10 subheading subheading-lg">FIND US</div>
+                <ul class="list-unstyled hint-text">
+                    <li class="m-b-10"><i class="fa fa-angle-right"></i> Nice webApp & BigData Center </li>
+                    <li class="m-b-10"><i class="fa fa-angle-right"></i> 1600 West Antelope Drive </li>
+                    <li class="m-b-10"><i class="fa fa-angle-right"></i> Layton, UT 84041</li>
+                    <li class="m-b-10"><i class="fa fa-angle-right"></i> (801) 807-1000</li>
+                    <li><i class="fa fa-angle-right"></i> info@johndoe.com</li>
+                </ul>
+            </div>
+            <div class="col-sm-3 m-b-20 xs-text-center">
+                <div class="h4 no-m m-b-10 subheading subheading-lg">FOLLOW US</div>
+                <div class="m-t-30">
+                    <a class="btn bg-facebook color-white btn-rounded btn-icon">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a class="btn bg-twitter color-white btn-rounded btn-icon">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a class="btn bg-googleplus color-white btn-rounded btn-icon">
+                        <i class="fa fa-google-plus"></i>
+                    </a>
+                    <a class="btn bg-dribbble color-white btn-rounded btn-icon">
+                        <i class="fa fa-dribbble"></i>
+                    </a>
+                    <a class="btn bg-linkedin color-white btn-rounded btn-icon">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-3 m-b-20 xs-text-center">
+                <div class="h4 no-m m-b-10 subheading subheading-lg">ABOUT US</div>
+                <p class="hint-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p> 
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bg-grey2 dk p-t-b-10">
+    <div class="container">
+        <div class="row p-t-10 text-xs">
+            <div class="col-sm-12 col-xs-12 clearfix">
+                <ul class="list-inline inline-block hint-text">
+                    <li><a href="#products" class="text-white">Products</a></li>
+                    <li><a href="#clients" class="text-white">Clients</a></li>
+                    <li><a href="#pricing" class="text-white">Pricing</a></li>
+                </ul>
+                <span class="pull-right">YeApp © 2015</span>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end: Footer/Contact -->
+
+
+
+        <!-- start: JS scripts -->
+        <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/smoothscroll.js"></script>
+        <script type="text/javascript" src="js/wow.min.js"></script>
+        <script type="text/javascript" src="js/jquery.appear.js"></script>
+        <script type="text/javascript" src="js/jquery.smoothwheel.js"></script>
+        <script type="text/javascript" src="js/nprogress/nprogress.js"></script>
+        
+        
+    <script type="text/javascript" src="js/rainbowjs/js/rainbow.min.js"></script>
+    <script type="text/javascript" src="js/rainbowjs/js/language/generic.js"></script>
+    <script type="text/javascript" src="js/rainbowjs/js/language/javascript.js"></script>
+    <script src="js/trumbowyg/dist/trumbowyg.min.js"></script>
+
+        <script>
+            $('#msgTextarea').trumbowyg({
+                fullscreenable: true,
+                closable: false,
+                btns: ['bold', 'italic', 'underline', 'strikethrough', '|','unorderedList', 'orderedList','|','justifyLeft', 'justifyFull']
+            });
+
+        </script>
+
+        
+        <script type="text/javascript" src="js/main.js"></script>
+        <!-- end: JS scripts -->
+        
+    </body>
+</html>

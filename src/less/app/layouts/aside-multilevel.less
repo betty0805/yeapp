@@ -1,0 +1,124 @@
+.getNavChildrenSettings(@first,@second){
+    .app-aside{
+        .nav-wrapper>.main-nav{
+            &>li{
+                //first level
+                &>.nav-children{
+                    &>li{
+                        //second level
+                        &>.nav-children{
+                            &>li{
+                                &>a{
+                                    &>div{
+                                        margin-left: @first;
+                                    }
+                                }
+                                //third level
+                                &>.nav-children{
+                                    &>li{
+                                        &>a{
+                                            &>div{
+                                                margin-left: @second;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.app-aside>.nav-children{
+    &>li{
+        &>.nav-children{
+            &>li{
+                &>a{
+                    &>div{
+                        margin-left: 35px;
+                    }
+                }
+                &>.nav-children{
+                    &>li{
+                        &>a{
+                            &>div{
+                                margin-left: 45px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.app-wrapper{
+    .getNavChildrenSettings(65px,75px);
+}
+
+body.app-aside-docked .app-wrapper{
+    .getNavChildrenSettings(35px,45px);
+}
+
+body.app-aside-folded{
+    .app-wrapper{
+        .app-aside{
+            .nav-wrapper>.main-nav{
+                &>li{
+                    //first level
+                    &>.nav-children{
+                        &>li{
+                            //second level
+                            &>.nav-children{
+                                display:none;
+                                position: relative !important;
+                                left: auto;
+                                top: auto;
+                                width: auto;
+                                margin-top:0px;
+                                &>li{
+                                    &>a{
+                                        &>div{
+                                            margin-left: 45px;
+                                        }
+                                    }
+                                    //third level
+                                    &>.nav-children{
+                                        display:none;
+                                        position: relative !important;
+                                        top: auto;
+                                        left:auto;
+                                        width: auto;
+                                        margin-top:0px;
+                                        &>li{
+                                            &>a{
+                                                &>div{
+                                                    margin-left: 55px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    &.opened{
+                                        &>.nav-children{
+                                            display:block !important;     
+                                        }
+                                    }
+                                }
+                            }
+                            &.opened{
+                                &>.nav-children{
+                                    display:block !important;     
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+

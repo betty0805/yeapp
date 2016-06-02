@@ -1,0 +1,24 @@
+<div class="panel panel-default">
+    <div class="panel-body">
+        <div class="text-muted">{{tag}}</div>
+        <h3 class="no-m m-b-30">
+            <a>{{title}}</a>
+        </h3>
+        <div class="m-t-5">
+            <a class="inline-block m-r-3">
+                <i class="fa fa-eye"></i>  {{views}} 
+            </a>
+            <a class="inline-block">
+                <i class="fa fa-heart-o"></i> {{likes}}
+            </a>
+        </div>
+    </div>
+    <div class="panel-footer item">
+        <a>
+            <img src="img/avatars/{{user.avatar}}" class="thumb-xxs img-circle inline-block m-r-3" alt="pic"> <span class="text-muted">{{user.name}}</span>
+        </a>
+        <div class="text-muted item-wrapper top right">
+            <div class="m-r-30 m-t-15">{{time}}</div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,113 @@
+.app-checkbox{
+    font-weight:400;
+    margin-bottom:0px;
+    margin-right:5px;
+    input[type="checkbox"] {
+        display: none;
+        &+i{
+            position: relative;
+            display: inline-block;
+            width:20px;
+            height:20px;
+            margin-right:3px;
+            margin-top: -2px;
+            cursor:pointer;
+            line-height: 1;
+            vertical-align: middle;
+            background-color: #fff;
+            border: 1px solid #bbb;
+            .border-radius(20px,20px,20px,20px);
+            .transition(all @defTransitionTime ease-in-out);
+            &:hover{
+                border-color: @brand-primary;
+            }
+        }
+        &:checked + i{
+            border: 1px solid @brand-primary;
+            background-color: @brand-primary;
+            color: #fff;
+            &:after {
+                position: absolute;
+                content:"\00a0";
+                display:block;
+                border: solid #fff;
+                border-width: 0 2px 2px 0;
+                /*Make it a small rectangle so the border will create an L-shape*/
+                width: 6px;
+                height: 10px;
+                left: 6px;
+                top: 7px;
+                margin-top: -4px;
+                .transition(all .2s);
+                /*Rotate the L 45 degrees to turn it into a checkmark*/
+                .rotate(45deg);
+            }
+        }
+        &:disabled + i{
+            opacity:0.3;
+        }
+        &+.big-checkbox {
+            padding: 16px;
+        }
+    }
+}
+
+.app-radio{
+    font-weight:400;
+    margin-bottom:0px;
+    margin-right:5px;
+    input[type="radio"] {
+        display: none;
+        &+ i {
+            position: relative;
+            display: inline-block;
+            width:20px;
+            height:20px;
+            margin-top: -2px;
+            margin-right:3px;
+            cursor:pointer;
+            line-height: 1;
+            vertical-align: middle;
+            background-color: #fff;
+            border: 1px solid #bbb;
+            .border-radius(50px,50px,50px,50px);
+            .transition(all @defTransitionTime ease-in-out);
+            &:hover{
+                border-color: @brand-primary;
+            }
+        }
+
+        &:checked + i:after {
+            content: ' ';
+            width: 10px;
+            height: 10px;
+            border-radius: 50px;
+            position: absolute;
+            top: 4px;
+            background: @brand-primary;
+            text-shadow: 0px;
+            left: 4px;
+            font-size: 32px;
+        }
+
+        &:checked + i {
+            background-color: #ffff;
+            color: @brand-primary;
+            border: 1px solid @brand-primary;
+        }
+
+        &:disabled + i{
+            opacity:0.3;
+        }
+
+        &+.big-checkbox {
+            padding: 16px;
+        }
+    }
+}
+
+label.app-checkbox,label.app-radio{
+    padding-left:0px;
+}
+
+

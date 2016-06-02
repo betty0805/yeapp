@@ -1,0 +1,134 @@
+/* NO BORDER */
+.no-border,.no-b{
+    border-color: transparent;
+    border: none;
+}
+
+.no-border-i,.no-b-i{
+    border: none !important;
+    border-color: transparent !important;
+}
+
+.no-b-t{
+    border-top:none !important;
+} 
+
+.no-b-r{
+    border-right:none !important;
+}
+
+.no-b-l{
+    border-left:none !important;
+}
+
+.no-b-b{
+    border-bottom:none !important;
+}
+
+/* BORDER STYLE */
+.b-panel{
+    border: 1px solid @separatorColorLt;
+}
+
+.b-solid{
+    border-style:solid;
+}
+
+.b-dashed{
+    border-style:dashed;
+}
+
+.b-dotted{
+    border-style: dotted;
+}
+
+/* BORDER WIDTH */
+.b-1px{
+    border-width:1px;
+}
+
+.b-2px{
+    border-width:2px;
+}
+
+.b-3px{
+    border-width:3px;
+}
+
+.b-4px{
+    border-width:4px;
+}
+
+.b-5px{
+    border-width:5px;
+}
+
+.b-lt{
+    border-color:#ddd;
+}
+
+.b-b-1px{
+    border-width:0px 0px 1px 0px;
+}
+
+.b-tab-holder{
+    border-color:#dddddd;
+    border-top:none;
+}
+
+/* BOX SEPARATORS */
+.box-border-r,.b-b-r{
+    border-right:1px solid @separatorColor !important; 
+}
+
+.box-border-l,.b-b-l{
+    border-left:1px solid @separatorColor !important;
+}
+
+.box-border-t,.b-b-t{
+    border-top:1px solid @separatorColor !important;
+}
+
+.box-border-b,.b-b-b{
+    border-bottom:1px solid @separatorColor !important;
+}
+
+.box-border-r-light,.b-b-r-l{
+    border-right:1px solid lighten(@separatorColorLt,5%) !important;
+}
+
+.box-border-l-light,.b-b-l-l{
+    border-left:1px solid lighten(@separatorColorLt,5%) !important;
+}
+
+.box-border-t-light,.b-b-t-l{
+    border-top:1px solid lighten(@separatorColorLt,5%) !important;
+}
+
+.box-border-b-light,.b-b-b-l{
+    border-bottom:1px solid lighten(@separatorColorLt,5%) !important;
+}
+
+/* BORDER SEPARATORS */
+.border-xs-sep-b,.b-xs-s-b{
+    @media (max-width: @screen-xs-max) {
+        border-bottom:1px solid #c1c1c1 !important;
+    }
+}
+
+.b-sep-l{
+    border-left:1px solid #d6dbe0;
+}
+
+.b-sep-r{
+    border-right:1px solid #d6dbe0;
+}
+
+.b-sep-b{
+    border-bottom:1px solid #d6dbe0;
+}
+
+.b-sep-t{
+    border-top:1px solid #d6dbe0;
+}
+

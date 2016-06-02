@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>YeApp - Flat web application template & UI KIT with Bootstrap 3 and AngularJS</title>
+        
+        <!-- start: CSS -->
+        <link href='fonts/opensans/font.css' rel='stylesheet' type='text/css'>
+        <link href='fonts/montserrat/font.css' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="css/result.css">
+        <link rel="stylesheet" type="text/css" href="css/animate.css">
+        <link rel="stylesheet" type="text/css" href="fonts/linea/_basic/_ICONFONT/styles.css">
+        <link rel="stylesheet" type="text/css" href="fonts/linea/_arrows/_ICONFONT/styles.css">
+        <link rel="stylesheet" type="text/css" href="fonts/linea/_software/_ICONFONT/styles.css">
+        <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="js/nprogress/nprogress.css">
+        <!-- end: CSS -->
+        
+        
+    
+    <link rel="stylesheet" type="text/css" href="js/owlcarousel/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="js/owlcarousel/owl-carousel/owl.theme.css">
+
+
+    </head>
+    <body class="bg-lightgrey has-info-bar">
+        
+        
+
+    <!-- start: Info bar -->
+<div class="bg-black color-white info-bar">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 info-bar-left">
+                <ul class="clearfix">
+                    <li>
+                        <a><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a><i class="fa fa-behance"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-6 info-bar-right">
+                <ul class="clearfix">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle font-montserrat" data-toggle="dropdown">English <i class="fa fa-angle-down"></i></a>
+                        <div class="dropdown-menu animated fadeIn no-b-i" style="min-width:100%;">
+                            <div class="text-center">
+                                <div class="b-b-b-l p-b-5 m-b-5">
+                                    <a class="display-block">English</a>
+                                </div>
+                                <div class="b-b-b-l p-b-5 m-b-5">
+                                    <a class="display-block">German</a>
+                                </div>
+                                <div>
+                                    <a class="display-block">Spanish</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle font-montserrat" data-toggle="dropdown" role="button">Sign In <i class="fa fa-angle-down"></i></a>
+                        <div class="dropdown-menu drop-down-sign-in p-30 animated fadeIn no-b-i">
+                            <form>
+                                <div class="form-group form-group-alt no-m-b no-b-b">
+                                    <input type="text" class="form-control no-m-t" placeholder="Username" style="width:200px;">
+                                    <span></span>
+                                </div>
+                                <div class="form-group form-group-alt no-m-b">
+                                    <input type="password" class="form-control no-m-t" placeholder="Password" style="width:200px;">
+                                    <span></span>
+                                </div>
+                                <div class="m-t-20">
+                                    <button class="btn btn-primary btn-block btn-rounded btn-line">Sign In</button>
+                                </div>
+                            </form>
+                            <div class="m-t-20">
+                                <a>Not have an Account? <span class="font-bold">Sign Up</span></a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end: Info bar -->
+
+<!-- start: Navigation/Header -->
+<div id="header" class="navbar app-navbar app-navbar-v2 app-navbar-dropdown-hover navbar-fixed-top font-montserrat">
+    <div class="container xs-no-p">
+        <div class="row no-m">
+            <div class="col-md-12">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed no-p-i m-t-b-5 no-m-r" data-toggle="collapse" data-target="#landingPageNavbarCollapse">
+                        <i class="icon icon-arrows-hamburger-2 icon-font collapse-fix"></i>
+                    </button>
+                    <a href="index.html" class="navbar-brand mobile-m-l no-p"> 
+                        <img id="brand-logo" src="img/yeapp-logo-dk.png" alt="logo" style="height:30px;">
+                    </a>
+                </div>
+                <div id="landingPageNavbarCollapse" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                                Ticketing <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeIn">
+                                <li><a href="ticketing.list.html">Tickets list</a></li>
+                                <li><a href="ticketing.grid.html">Tickets grid</a></li>
+                                <li><a href="ticketing.detail.html">Ticket detail</a></li>
+                                <li><a href="ticketing.open.html">Open ticket</a></li>
+                                <li><a href="ticketing.open.fullwidth.html">Open ticket full</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                                Forum <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeIn">
+                                <li><a href="forum.table.html">Forum table</a></li>
+                                <li><a href="forum.grid.html">Forum grid</a></li>
+                                <li><a href="forum.table.fullwidth.html">Forum table full</a></li>
+                                <li><a href="forum.grid.fullwidth.html">Forum grid full</a></li>
+                                <li><a href="forum.detail.html">Forum detail</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                                Knowledge <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeIn">
+                                <li><a href="knowledge.3col.html">3 columns</a></li>
+                                <li><a href="knowledge.2col.html">2 columns</a></li>
+                                <li><a href="knowledge.1col.html">1 columns</a></li>
+                                <li><a href="knowledge.detail.html">Knowledge detail</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                                Blog <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeIn">
+                                <li><a href="blog.fullwidth.html">Full-width</a></li>
+                                <li><a href="blog.grid.html">Grid list</a></li>
+                                <li><a href="blog.standard.html">Standard</a></li>
+                                <li><a href="blog.smallthumb.html">Small thumbnails</a></li>
+                                <li><a href="blog.post.fullwidth.html">Post full</a></li>
+                                <li><a href="blog.post.html">Post</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="contact.html">
+                                Contact
+                            </a>
+                        </li>
+                        <li>
+                            <div class="m-t-14 m-l-10">
+                                <a href="livechat.html" class="btn btn-success btn-sm btn-rounded btn-line btn-b-2 font-bold">Live chat</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end: Navigation/Header -->
+
+
+        
+        
+
+    <div class="img-cover img-cover-dark" style="background-image: url('img/bgimg/big/35.jpg')">
+    <div class="container p-t-b-50 m-t-60 app-jumbotron">
+        <div class="row text-center owl-carousel owl-theme">
+            <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 item ">
+                <h1 class="no-m m-b-30 text-white">Node.js Production Environment</h1>
+                <h4 class="no-m m-b-30 text-white">
+                    Setting up a Node.js production environment and the continuous deployment pipeline for that is not a trivial task to do
+                </h4>
+                <div ><a class="btn btn-white btn-rounded btn-line">Read more</a></div>
+            </div>
+            <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 item">
+                <h1 class="no-m m-b-30 text-white">AngularJS courses</h1>
+                <h4 class="no-m m-b-30 text-white">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+                </h4>
+                <div ><a class="btn btn-white btn-rounded btn-line">Read more</a></div>
+            </div>
+            <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 item">
+                <h1 class="no-m m-b-30 text-white">Is Isomorphic JavaScript a good term?</h1>
+                <h4 class="no-m m-b-30 text-white">
+                    A recent trend in the web development world is to use JavaScript on the server to assemble pages there, with the same code...
+                </h4>
+                <div ><a class="btn btn-white btn-rounded btn-line">Read more</a></div>
+            </div>
+            <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 item">
+                <h1 class="no-m m-b-30 text-white">How to make Asnyc call in angular?</h1>
+                <h4 class="no-m m-b-30 text-white">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+                </h4>
+                <div ><a class="btn btn-white btn-rounded btn-line">Read more</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        
+        
+
+    <div class="p-t-b-10 b-b-b-l">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 m-t-b-10">
+                    <strong>5,656</strong> articles in base
+                </div>
+                <div class="col-sm-6 text-right m-t-b-10">
+                    <ol class="breadcrumb no-p-r-l no-m no-bg no-p">
+                        <li><a href="#">Home</a></li>
+                        <li class="active">Blog</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-padding p-t-20">
+        <div class="container app-grid-panels" >
+
+            
+
+                
+                    <div class="row">
+                
+
+                
+                    <div class="col-sm-5">
+                        <div class="panel panel-default app-grid-panel-main">
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-10">
+                <div class="m-b-20"><span class="label label-info h3 no-m label-rounded font-montserrat text-uppercase">javascript</span></div>
+                <h3 class="no-m m-b-20">
+                    <a>Googles Angular 2 Survey Results</a>
+                </h3>
+                <p class="no-m m-b-10 text-lg">
+                    JavaScript globals are considered bad.  And as a contributor to the MooTools project, Ive heard this on a daily basis...
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <div class="panel-footer item">
+        <a>
+            <img src="img/avatars/face1.jpg" class="thumb-xxs img-circle inline-block m-r-3" alt="pic"> <span class="text-muted">John Kun</span>
+        </a>
+        <div class="text-muted item-wrapper top right">
+            <div class="m-r-30 m-t-15">23/07/2015</div>
+        </div>
+    </div>
+</div>
+                    </div>
+                
+                
+                
+
+                
+
+            
+
+                
+
+                
+                    <div class="col-sm-3">
+                        <div class="panel panel-default bg-yellow text-center no-b-i">
+    <div class="panel-body">
+        <div class="m-b-15">
+            <span class="label h3 no-m label-rounded font-montserrat text-def text-uppercase ">courses</span>
+        </div>
+        <h3 class="no-m m-b-20 font-bold">
+            <a class="text-def">AngularJS courses</a>
+        </h3>
+        <p class="no-m text-def">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+        </p>
+    </div>
+    <div class="panel-footer item no-bg">
+        <a href="#" class="btn btn-primary btn-line btn-sm btn-rounded">Read more</a>
+    </div>
+</div>
+                    </div>
+                
+                
+                
+
+                
+
+            
+
+                
+
+                
+                    <div class="col-sm-4">
+                        
+                            <div class="panel panel-default">
+    <div class="panel-body">
+        <div class="text-muted">Buyer Tricks</div>
+        <h3 class="no-m m-b-30">
+            <a>The Importance of Context-Shifting in UX Patterns</a>
+        </h3>
+        <div class="m-t-5">
+            <a class="inline-block m-r-3">
+                <i class="fa fa-eye"></i>  33 
+            </a>
+            <a class="inline-block">
+                <i class="fa fa-heart-o"></i> 11
+            </a>
+        </div>
+    </div>
+    <div class="panel-footer item">
+        <a>
+            <img src="img/avatars/face6.jpg" class="thumb-xxs img-circle inline-block m-r-3" alt="pic"> <span class="text-muted">Oslo Jane</span>
+        </a>
+        <div class="text-muted item-wrapper top right">
+            <div class="m-r-30 m-t-15">20/08/2015</div>
+        </div>
+    </div>
+</div>
+                        
+                    </div>
+                
+                
+                
+
+                
+                    </div>
+                    
+                
+
+            
+
+                
+                    <div class="row">
+                
+
+                
+                    <div class="col-sm-4">
+                        
+                            <div class="panel panel-default">
+    <div class="panel-body no-p-i">
+        <div class="item">
+            <div class="wrapper top left">
+                <div class="p-30"><span class="label label-primary  h3 no-m label-rounded font-montserrat text-uppercase">CSS/LESS</span></div>
+            </div>
+            <img src="img/bgimg/big/22.jpg" class="img-responsive" alt="pic"> 
+        </div>
+        <div class="m-t-20 p-r-l-30 xs-no-p">
+            <h3 class="no-m m-b-10">
+                <a>The anatomy of responsive images</a>
+            </h3>
+            <p class="no-m">
+                Lorem ipsum dolor sit amet
+            </p>
+        </div>
+    </div>
+</div>
+                        
+                    </div>
+                
+                
+                
+
+                
+
+            
+
+                
+
+                
+                    <div class="col-sm-5">
+                        <div class="panel panel-default app-grid-panel-main">
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-10">
+                <div class="m-b-20"><span class="label label-success h3 no-m label-rounded font-montserrat text-uppercase">JQuery</span></div>
+                <h3 class="no-m m-b-20">
+                    <a>jQuery Foundation and Dojo Foundation to Merget</a>
+                </h3>
+                <p class="no-m m-b-10 text-lg">
+                    The jQuery Foundation and Dojo Foundation today announce plans to combine forces to form the largest, most diverse and most comprehensive...
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <div class="panel-footer item">
+        <a>
+            <img src="img/avatars/face2.jpg" class="thumb-xxs img-circle inline-block m-r-3" alt="pic"> <span class="text-muted">Zimbik Jones</span>
+        </a>
+        <div class="text-muted item-wrapper top right">
+            <div class="m-r-30 m-t-15">21/06/2015</div>
+        </div>
+    </div>
+</div>
+                    </div>
+                
+                
+                
+
+                
+
+            
+
+                
+
+                
+                    <div class="col-sm-3">
+                        <div class="panel panel-default bg-purple text-center no-b-i">
+    <div class="panel-body">
+        <div class="m-b-15">
+            <span class="label h3 no-m label-rounded font-montserrat text-white text-uppercase ">javascript</span>
+        </div>
+        <h3 class="no-m m-b-20 font-bold">
+            <a class="text-white">NodeJS tutorials</a>
+        </h3>
+        <p class="no-m text-white">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+        </p>
+    </div>
+    <div class="panel-footer item no-bg">
+        <a href="#" class="btn btn-white btn-line btn-sm btn-rounded">Read more</a>
+    </div>
+</div>
+                    </div>
+                
+                
+                
+
+                
+                    </div>
+                    
+                
+
+            
+
+                
+                    <div class="row">
+                
+
+                
+                    <div class="col-sm-6">
+                        <div class="panel panel-default app-grid-panel-main">
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-10">
+                <div class="m-b-20"><span class="label label-info h3 no-m label-rounded font-montserrat text-uppercase">Backend dev</span></div>
+                <h3 class="no-m m-b-20">
+                    <a>Is Isomorphic JavaScript a good term?</a>
+                </h3>
+                <p class="no-m m-b-10 text-lg">
+                    A recent trend in the web development world is to use JavaScript on the server to assemble pages there, with the same code that...
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <div class="panel-footer item">
+        <a>
+            <img src="img/avatars/face5.jpg" class="thumb-xxs img-circle inline-block m-r-3" alt="pic"> <span class="text-muted">Tick Tucker</span>
+        </a>
+        <div class="text-muted item-wrapper top right">
+            <div class="m-r-30 m-t-15">03/05/2015</div>
+        </div>
+    </div>
+</div>
+                    </div>
+                
+                
+                
+
+                
+
+            
+
+                
+
+                
+                    <div class="col-sm-6">
+                        <div class="panel panel-default app-grid-panel-main">
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-10">
+                <div class="m-b-20"><span class="label label-primary h3 no-m label-rounded font-montserrat text-uppercase">tipps & tricks</span></div>
+                <h3 class="no-m m-b-20">
+                    <a>Angular 2 Series - Part 1: Working with Pipes</a>
+                </h3>
+                <p class="no-m m-b-10 text-lg">
+                    Learn how to implement pipes (formerly known as filters) in your Angular 2 apps in this tutorial from Auth0
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <div class="panel-footer item">
+        <a>
+            <img src="img/avatars/face1.jpg" class="thumb-xxs img-circle inline-block m-r-3" alt="pic"> <span class="text-muted">Jon Done</span>
+        </a>
+        <div class="text-muted item-wrapper top right">
+            <div class="m-r-30 m-t-15">23/07/2015</div>
+        </div>
+    </div>
+</div>
+                    </div>
+                
+                
+                
+
+                
+                    </div>
+                    
+                
+
+            
+
+                
+                    <div class="row">
+                
+
+                
+                    <div class="col-sm-4">
+                        
+                            <div class="panel panel-default">
+    <div class="panel-body">
+        <div class="text-muted">Tutorials</div>
+        <h3 class="no-m m-b-30">
+            <a>How to make Asnyc call using angular ?</a>
+        </h3>
+        <div class="m-t-5">
+            <a class="inline-block m-r-3">
+                <i class="fa fa-eye"></i>  21 
+            </a>
+            <a class="inline-block">
+                <i class="fa fa-heart-o"></i> 22
+            </a>
+        </div>
+    </div>
+    <div class="panel-footer item">
+        <a>
+            <img src="img/avatars/face3.jpg" class="thumb-xxs img-circle inline-block m-r-3" alt="pic"> <span class="text-muted">Bick Humbuj</span>
+        </a>
+        <div class="text-muted item-wrapper top right">
+            <div class="m-r-30 m-t-15">10/04/2015</div>
+        </div>
+    </div>
+</div>
+                        
+                    </div>
+                
+                
+                
+
+                
+
+            
+
+                
+
+                
+                    <div class="col-sm-4">
+                        
+                            <div class="panel panel-default">
+    <div class="panel-body no-p-i">
+        <div class="item">
+            <div class="wrapper top left">
+                <div class="p-30"><span class="label label-info  h3 no-m label-rounded font-montserrat text-uppercase">programming</span></div>
+            </div>
+            <img src="img/bgimg/big/10.jpg" class="img-responsive" alt="pic"> 
+        </div>
+        <div class="m-t-20 p-r-l-30 xs-no-p">
+            <h3 class="no-m m-b-10">
+                <a>AngularJS apps</a>
+            </h3>
+            <p class="no-m">
+                Sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur... 
+            </p>
+        </div>
+    </div>
+</div>
+                        
+                    </div>
+                
+                
+                
+
+                
+
+            
+
+                
+
+                
+                    <div class="col-sm-4">
+                        
+                            <div class="panel panel-default">
+    <div class="panel-body no-p-i">
+        <div class="item">
+            <div class="wrapper top left">
+                <div class="p-30"><span class="label label-primary  h3 no-m label-rounded font-montserrat text-uppercase">design</span></div>
+            </div>
+            <img src="img/bgimg/big/21.jpg" class="img-responsive" alt="pic"> 
+        </div>
+        <div class="m-t-20 p-r-l-30 xs-no-p">
+            <h3 class="no-m m-b-10">
+                <a>UX inspirations</a>
+            </h3>
+            <p class="no-m">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+            </p>
+        </div>
+    </div>
+</div>
+                        
+                    </div>
+                
+                
+                
+
+                
+                    </div>
+                    
+                
+
+            
+
+                
+                    <div class="row">
+                
+
+                
+                    <div class="col-sm-3">
+                        <div class="panel panel-default bg-yellow text-center no-b-i">
+    <div class="panel-body">
+        <div class="m-b-15">
+            <span class="label h3 no-m label-rounded font-montserrat text-def text-uppercase ">courses</span>
+        </div>
+        <h3 class="no-m m-b-20 font-bold">
+            <a class="text-def">AngularJS courses</a>
+        </h3>
+        <p class="no-m text-def">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+        </p>
+    </div>
+    <div class="panel-footer item no-bg">
+        <a href="#" class="btn btn-primary btn-line btn-sm btn-rounded">Read more</a>
+    </div>
+</div>
+                    </div>
+                
+                
+                
+
+                
+
+            
+
+                
+
+                
+                    <div class="col-sm-4">
+                        
+                            <div class="panel panel-default">
+    <div class="panel-body">
+        <div class="text-muted">Buyer Tricks</div>
+        <h3 class="no-m m-b-30">
+            <a>The Importance of Context-Shifting in UX Patterns</a>
+        </h3>
+        <div class="m-t-5">
+            <a class="inline-block m-r-3">
+                <i class="fa fa-eye"></i>  33 
+            </a>
+            <a class="inline-block">
+                <i class="fa fa-heart-o"></i> 11
+            </a>
+        </div>
+    </div>
+    <div class="panel-footer item">
+        <a>
+            <img src="img/avatars/face6.jpg" class="thumb-xxs img-circle inline-block m-r-3" alt="pic"> <span class="text-muted">Oslo Jane</span>
+        </a>
+        <div class="text-muted item-wrapper top right">
+            <div class="m-r-30 m-t-15">20/08/2015</div>
+        </div>
+    </div>
+</div>
+                        
+                    </div>
+                
+                
+                
+
+                
+
+            
+
+                
+
+                
+                    <div class="col-sm-5">
+                        <div class="panel panel-default app-grid-panel-main">
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-10">
+                <div class="m-b-20"><span class="label label-primary h3 no-m label-rounded font-montserrat text-uppercase">javascript</span></div>
+                <h3 class="no-m m-b-20">
+                    <a>Googles Angular 2 Survey Results</a>
+                </h3>
+                <p class="no-m m-b-10 text-lg">
+                    JavaScript globals are considered bad.  And as a contributor to the MooTools project, Ive heard this on a daily basis...
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <div class="panel-footer item">
+        <a>
+            <img src="img/avatars/face1.jpg" class="thumb-xxs img-circle inline-block m-r-3" alt="pic"> <span class="text-muted">John Kun</span>
+        </a>
+        <div class="text-muted item-wrapper top right">
+            <div class="m-r-30 m-t-15">23/07/2015</div>
+        </div>
+    </div>
+</div>
+                    </div>
+                
+                
+                
+
+                
+                    </div>
+                    
+                
+
+            
+
+                
+                    <div class="row">
+                
+
+                
+                    <div class="col-sm-4">
+                        
+                            <div class="panel panel-default">
+    <div class="panel-body no-p-i">
+        <div class="item">
+            <div class="wrapper top left">
+                <div class="p-30"><span class="label label-success  h3 no-m label-rounded font-montserrat text-uppercase">CSS/LESS</span></div>
+            </div>
+            <img src="img/bgimg/big/22.jpg" class="img-responsive" alt="pic"> 
+        </div>
+        <div class="m-t-20 p-r-l-30 xs-no-p">
+            <h3 class="no-m m-b-10">
+                <a>The anatomy of responsive images</a>
+            </h3>
+            <p class="no-m">
+                Lorem ipsum dolor sit amet
+            </p>
+        </div>
+    </div>
+</div>
+                        
+                    </div>
+                
+                
+                
+
+                
+
+            
+
+                
+
+                
+                    <div class="col-sm-3">
+                        <div class="panel panel-default bg-purple text-center no-b-i">
+    <div class="panel-body">
+        <div class="m-b-15">
+            <span class="label h3 no-m label-rounded font-montserrat text-white text-uppercase ">javascript</span>
+        </div>
+        <h3 class="no-m m-b-20 font-bold">
+            <a class="text-white">NodeJS tutorials</a>
+        </h3>
+        <p class="no-m text-white">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+        </p>
+    </div>
+    <div class="panel-footer item no-bg">
+        <a href="#" class="btn btn-white btn-line btn-sm btn-rounded">Read more</a>
+    </div>
+</div>
+                    </div>
+                
+                
+                
+
+                
+
+            
+
+                
+
+                
+                    <div class="col-sm-5">
+                        <div class="panel panel-default app-grid-panel-main">
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-10">
+                <div class="m-b-20"><span class="label label-info h3 no-m label-rounded font-montserrat text-uppercase">JQuery</span></div>
+                <h3 class="no-m m-b-20">
+                    <a>jQuery Foundation and Dojo Foundation to Merget</a>
+                </h3>
+                <p class="no-m m-b-10 text-lg">
+                    The jQuery Foundation and Dojo Foundation today announce plans to combine forces to form the largest, most diverse and most comprehensive...
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <div class="panel-footer item">
+        <a>
+            <img src="img/avatars/face2.jpg" class="thumb-xxs img-circle inline-block m-r-3" alt="pic"> <span class="text-muted">Zimbik Jones</span>
+        </a>
+        <div class="text-muted item-wrapper top right">
+            <div class="m-r-30 m-t-15">21/06/2015</div>
+        </div>
+    </div>
+</div>
+                    </div>
+                
+                
+                
+
+                
+                    </div>
+                    
+                
+
+            
+
+                
+                    <div class="row">
+                
+
+                
+                    <div class="col-sm-3">
+                        <div class="panel panel-default bg-white text-center no-b-i">
+    <div class="panel-body">
+        <div class="m-b-15">
+            <span class="label h3 no-m label-rounded font-montserrat text-def text-uppercase ">inpspiration</span>
+        </div>
+        <h3 class="no-m m-b-20 font-bold">
+            <a class="text-def">UX/UI inspirations</a>
+        </h3>
+        <p class="no-m text-def">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+        </p>
+    </div>
+    <div class="panel-footer item no-bg">
+        <a href="#" class="btn btn-primary btn-line btn-sm btn-rounded">Read more</a>
+    </div>
+</div>
+                    </div>
+                
+                
+                
+
+                
+
+            
+
+                
+
+                
+                    <div class="col-sm-6">
+                        <div class="panel panel-default app-grid-panel-main">
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-10">
+                <div class="m-b-20"><span class="label label-info h3 no-m label-rounded font-montserrat text-uppercase">Backend dev</span></div>
+                <h3 class="no-m m-b-20">
+                    <a>Is Isomorphic JavaScript a good term?</a>
+                </h3>
+                <p class="no-m m-b-10 text-lg">
+                    A recent trend in the web development world is to use JavaScript on the server to assemble pages there, with the same code that...
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <div class="panel-footer item">
+        <a>
+            <img src="img/avatars/face5.jpg" class="thumb-xxs img-circle inline-block m-r-3" alt="pic"> <span class="text-muted">Tick Tucker</span>
+        </a>
+        <div class="text-muted item-wrapper top right">
+            <div class="m-r-30 m-t-15">03/05/2015</div>
+        </div>
+    </div>
+</div>
+                    </div>
+                
+                
+                
+
+                
+
+            
+
+                
+
+                
+                    <div class="col-sm-3">
+                        <div class="panel panel-default bg-yellow text-center no-b-i">
+    <div class="panel-body">
+        <div class="m-b-15">
+            <span class="label h3 no-m label-rounded font-montserrat text-def text-uppercase ">javascript</span>
+        </div>
+        <h3 class="no-m m-b-20 font-bold">
+            <a class="text-def">JQuery courses</a>
+        </h3>
+        <p class="no-m text-def">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+        </p>
+    </div>
+    <div class="panel-footer item no-bg">
+        <a href="#" class="btn btn-primary btn-line btn-sm btn-rounded">Read more</a>
+    </div>
+</div>
+                    </div>
+                
+                
+                
+
+                
+                    </div>
+                    
+                
+
+            
+            <div class="text-center m-t-15">
+                <button class="btn btn-primary btn-line btn-rounded p-r-l-30">Load more</button>
+            </div>
+        </div>
+    </div>
+
+
+        
+        
+
+    <!-- start: Footer/Contact -->
+<div id="contact" class="content-padding font-thin bg-grey2 text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3 col-xs-12 m-b-20 xs-text-center">
+                <div class="h4 no-m m-b-10 subheading subheading-lg">OUR SERVICES</div>
+                <ul class="list-unstyled hint-text">
+                    <li class="m-b-10"><i class="fa fa-angle-right"></i> AngularJS development</li>
+                    <li class="m-b-10"><i class="fa fa-angle-right"></i> BigData analyse</li>
+                    <li class="m-b-10"><i class="fa fa-angle-right"></i> NodeJS development</li>
+                    <li class="m-b-10"><i class="fa fa-angle-right"></i> Fancy apps</li>
+                    <li><i class="fa fa-angle-right"></i> Cisco networks</li>
+                </ul>
+            </div>
+
+            <div class="col-sm-3 m-b-20 xs-text-center">
+                <div class="h4 no-m m-b-10 subheading subheading-lg">FIND US</div>
+                <ul class="list-unstyled hint-text">
+                    <li class="m-b-10"><i class="fa fa-angle-right"></i> Nice webApp & BigData Center </li>
+                    <li class="m-b-10"><i class="fa fa-angle-right"></i> 1600 West Antelope Drive </li>
+                    <li class="m-b-10"><i class="fa fa-angle-right"></i> Layton, UT 84041</li>
+                    <li class="m-b-10"><i class="fa fa-angle-right"></i> (801) 807-1000</li>
+                    <li><i class="fa fa-angle-right"></i> info@johndoe.com</li>
+                </ul>
+            </div>
+            <div class="col-sm-3 m-b-20 xs-text-center">
+                <div class="h4 no-m m-b-10 subheading subheading-lg">FOLLOW US</div>
+                <div class="m-t-30">
+                    <a class="btn bg-facebook color-white btn-rounded btn-icon">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a class="btn bg-twitter color-white btn-rounded btn-icon">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a class="btn bg-googleplus color-white btn-rounded btn-icon">
+                        <i class="fa fa-google-plus"></i>
+                    </a>
+                    <a class="btn bg-dribbble color-white btn-rounded btn-icon">
+                        <i class="fa fa-dribbble"></i>
+                    </a>
+                    <a class="btn bg-linkedin color-white btn-rounded btn-icon">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-3 m-b-20 xs-text-center">
+                <div class="h4 no-m m-b-10 subheading subheading-lg">ABOUT US</div>
+                <p class="hint-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p> 
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bg-grey2 dk p-t-b-10">
+    <div class="container">
+        <div class="row p-t-10 text-xs">
+            <div class="col-sm-12 col-xs-12 clearfix">
+                <ul class="list-inline inline-block hint-text">
+                    <li><a href="#products" class="text-white">Products</a></li>
+                    <li><a href="#clients" class="text-white">Clients</a></li>
+                    <li><a href="#pricing" class="text-white">Pricing</a></li>
+                </ul>
+                <span class="pull-right">YeApp © 2015</span>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end: Footer/Contact -->
+
+
+
+        <!-- start: JS scripts -->
+        <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/smoothscroll.js"></script>
+        <script type="text/javascript" src="js/wow.min.js"></script>
+        <script type="text/javascript" src="js/jquery.appear.js"></script>
+        <script type="text/javascript" src="js/jquery.smoothwheel.js"></script>
+        <script type="text/javascript" src="js/nprogress/nprogress.js"></script>
+        
+        
+
+    <script src="js/owlcarousel/owl-carousel/owl.carousel.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $(".owl-carousel").owlCarousel({
+                navigation : false, // Show next and prev buttons
+                slideSpeed : 300,
+                paginationSpeed : 400,
+                singleItem:true,
+                autoPlay:true,
+                pagination:false
+                // "singleItem:true" is a shortcut for:
+                // items : 1, 
+                // itemsDesktop : false,
+                // itemsDesktopSmall : false,
+                // itemsTablet: false,
+                // itemsMobile : false
+            });
+        });
+    </script>
+
+
+        
+        <script type="text/javascript" src="js/main.js"></script>
+        <!-- end: JS scripts -->
+        
+    </body>
+</html>

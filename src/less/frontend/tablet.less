@@ -1,0 +1,20 @@
+
+@media(min-width:767px){
+    .display-table{
+        display: table;
+        height: 300px;
+        &>div{
+            display:table-cell;
+            vertical-align: middle;
+            height: 300px;
+            &>div{
+                display:table-cell;
+                height: 300px; vertical-align: middle;
+            }
+        }
+        img{
+            display:table-cell;
+            vertical-align: middle;
+        }
+    }
+}

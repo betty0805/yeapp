@@ -1,0 +1,38 @@
+<!-- START: FORUM-TOPIC -->
+<div class="row r-sm-table b-b-b-l p-t-b-30 no-m">
+    <div class="col-sm-8 col-sm-cell no-p">
+        <div class="h3 no-m m-b-10 font-thin item">
+            <div class="item-wrapper top left">
+                <div>
+                    <i class="icon-arrows {{iconClass}}"></i>
+                </div>
+            </div>
+            <a class="m-l-30 font-normal">{{topic_name}}</a>
+        </div>
+        <p class="">
+            {{description}} [...]
+        </p>
+        <ul class="list-unstyled tag-list inline-block m-b-10">
+            {% for tag in tags %}
+                <li><a>{{tag}}</a></li>
+            {% endfor %}
+        </ul>
+        <div class="text-xs">
+            <a>{{user.name}}</a> - <span class="text-muted">{{time}}</span>
+        </div>
+    </div>
+    <div class="col-sm-4 col-sm-cell no-p text-right">
+        <div class="m-t-10 m-l-10">
+            <div class="inline-block b-rad-500 p-20 bg-light text-center m-b-5">
+                <div class="h5 no-m">{{views}}</div>
+                <div class="text-xs">views</div>
+            </div>
+            <div class="inline-block b-rad-500 p-20 bg-light text-center">
+                <div class="h5 no-m">{{posts}}</div>
+                <div class="text-xs">posts</div>
+            </div>
+
+        </div>
+    </div>                                  
+</div>
+<!-- END: FORUM-TOPIC -->

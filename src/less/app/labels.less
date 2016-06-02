@@ -1,0 +1,63 @@
+.label-default {
+  .label-variant(@label-default-bg);
+  .label-line(@label-default-bg);
+}
+
+.label-primary {
+  .label-variant(@label-primary-bg);
+  .label-line(@label-primary-bg);
+}
+
+.label-success {
+  .label-variant(@label-success-bg);
+  .label-line(@label-success-bg);
+}
+
+.label-info {
+  .label-variant(@label-info-bg);
+  .label-line(@label-info-bg);
+}
+
+.label-warning {
+  .label-variant(@label-warning-bg);
+  .label-line(@label-warning-bg);
+}
+
+.label-danger {
+  .label-variant(@label-danger-bg);
+  .label-line(@label-danger-bg);
+}
+
+.label-rounded{
+    .border-radius(100px,100px,100px,100px);
+    padding: .2em .6em .2em;
+}
+
+label.control-label{
+    font-weight: normal !important;
+}
+
+label.icheck{
+    padding-left:0px;
+    line-height:21px;
+    vertical-align: middle;
+}
+
+.label-tag{
+    background-color: #eee;
+    color:#797979;
+}
+
+
+.label-line(@color){
+    &.label-md{
+        padding: 4px 8px 4px 8px;
+        border:1px solid transparent;
+    }
+    &.label-line{
+        background-color:transparent;
+        color:@color;
+        border:1px solid @color;
+        padding: 4px 8px 3px 8px;
+    }
+}

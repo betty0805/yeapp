@@ -1,0 +1,76 @@
+.switch {
+    background: #fff;
+    border: 1px solid #dfdfdf;
+    position: relative;
+    display: inline-block;
+    box-sizing: content-box;
+    overflow: visible;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: rgb(223, 223, 223) 0px 0px 0px 0px inset;
+    
+    width: 52px;
+    height: 30px;
+    small {
+        background: #fff;
+        border-radius: 100%;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        transition: left 0.2s;
+        -webkit-transition: left 0.2s;
+    }
+    &.checked {
+        background: @btn-success-bg;
+        border-color: @btn-success-bg;
+        &.primary{
+            background: @btn-primary-bg;
+            border-color: @btn-primary-bg;
+        }
+        &.danger{
+            background: @btn-danger-bg;
+            border-color: @btn-danger-bg;
+        }
+        &.warning{
+            background: @btn-warning-bg;
+            border-color: @btn-warning-bg;
+        }
+        
+        small {
+            left: 22px;
+        }
+    }
+    
+    &.xs{
+        width: 32px;
+        height: 20px;
+        small {
+            width: 20px;
+            height: 20px;
+        }
+        &.checked {
+            small {
+                left: 12px;
+            }
+        }
+    }
+    &.md{
+        width: 42px;
+        height: 30px;
+        small {
+            width: 30px;
+            height: 30px;
+        }
+        &.checked {
+            small {
+                left: 11px;
+            }
+        }
+    }
+}
+
